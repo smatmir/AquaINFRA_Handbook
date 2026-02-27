@@ -76,7 +76,7 @@ title: Home
 <div class="path-step">
     <div class="step-marker">5</div>
     <div class="step-content">
-        <h2 class="step-title">Data to Knowledge Package</h2>
+        <h2 class="step-title">Data to Knowledge Package (D2KP)</h2>
         <p class="step-desc">Converting raw environmental data into actionable knowledge indicators.</p>
         <div class="step-links">
             <a href="{{ base }}05_data_to_knowledge" class="step-link"> Data to Knowledge →</a>

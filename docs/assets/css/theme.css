@@ -1,0 +1,417 @@
+/* =========================================
+   AquaINFRA Premium Theme Extensions
+   ========================================= */
+
+:root {
+    --aqua-blue: #3564AC;
+    --aqua-blue-light: #e1e9f6;
+    --aqua-hover: #2a5291;
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --border-light: 1px solid #e1e9f6;
+}
+
+/* Learning Path (Homepage) */
+.learning-path {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.path-step {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.path-step::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 50px;
+    bottom: -50px;
+    width: 2px;
+    background: var(--aqua-blue-light);
+    z-index: 0;
+}
+
+.path-step:last-child::before {
+    display: none;
+}
+
+.step-marker {
+    width: 38px;
+    height: 38px;
+    background: var(--aqua-blue);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    z-index: 1;
+    flex-shrink: 0;
+    box-shadow: 0 3px 8px rgba(53, 100, 172, 0.12);
+}
+
+.step-content {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-soft);
+    flex: 1;
+    border: 1px solid #f0f0f0;
+}
+
+.step-title {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.05rem;
+    color: #333;
+    border: none;
+}
+
+.step-desc {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    color: #666;
+}
+
+.step-link {
+    display: inline-block;
+    color: var(--aqua-blue);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.82rem;
+}
+
+.step-links {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.step-divider {
+    color: #ddd;
+    font-weight: 300;
+}
+
+/* Sequential Navigation Buttons */
+.sequence-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+
+.btn-seq {
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+    border: 1px solid #e1e9f6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-seq--next {
+    background: var(--aqua-blue);
+    color: white !important;
+}
+
+.btn-seq--prev {
+    background: #f8fafd;
+    color: var(--aqua-blue) !important;
+}
+
+.btn-seq:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(53, 100, 172, 0.15);
+}
+
+/* Use Case Cards (Library) */
+.use-case-library {
+    margin-top: 2rem;
+}
+
+.use-case-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.use-case-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: var(--border-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.use-case-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-body {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.use-case-card__title {
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+    color: var(--aqua-blue);
+    border: none;
+}
+
+.use-case-card__desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.resource-links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+.resource-btn {
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.resource-btn--zenodo {
+    background: #0072b2;
+    color: white;
+}
+
+.resource-btn--github {
+    background: #24292e;
+    color: white;
+}
+
+.resource-btn--youtube {
+    background: #ff0000;
+    color: white;
+}
+
+.use-case-card__footer {
+    background: #f8fafd;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--aqua-blue);
+    font-weight: 700;
+    border-top: var(--border-light);
+    transition: background 0.2s;
+}
+
+.use-case-card__footer:hover {
+    background: #e1e9f6;
+}
+
+/* Contact Page Enhancements */
+.contact-card {
+    border-top: 4px solid var(--aqua-blue);
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-title {
+    color: var(--aqua-blue);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border: none;
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+.contact-info-block {
+    margin-bottom: 2rem;
+}
+
+.contact-info-block h4 {
+    margin-bottom: 0.5rem;
+    color: var(--aqua-blue);
+}
+
+.contact-lead {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Hero Section (Homepage) - Matching aquainfra.eu/training */
+.hero-section {
+    background: linear-gradient(135deg, rgb(0, 51, 102), rgb(0, 102, 204));
+    padding: 64px 32px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    margin-bottom: 48px;
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 15px;
+    line-height: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 32px 16px;
+        margin-bottom: 32px;
+    }
+
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 12.5px;
+        line-height: 1.5;
+    }
+
+    .step-title {
+        font-size: 0.95rem;
+    }
+
+    .step-desc {
+        font-size: 0.82rem;
+    }
+}
+
+/* GitHub-style Alerts Styling */
+.alert-box {
+    margin: 2rem 0;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid transparent;
+    background-color: #f8f9fa;
+    color: #24292f;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.alert-box p {
+    margin-bottom: 0 !important;
+}
+
+.alert-box__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Specific Alert Types */
+.alert-box--note {
+    background-color: #f0f7ff;
+    border-left-color: #0969da;
+}
+
+.alert-box--note .alert-box__label {
+    color: #0969da;
+}
+
+.alert-box--note .alert-box__label::before {
+    content: 'ℹ️';
+    /* Note icon */
+    margin-right: 0.75rem;
+}
+
+.alert-box--tip {
+    background-color: #f0fdf4;
+    border-left-color: #1a7f37;
+}
+
+.alert-box--tip .alert-box__label {
+    color: #1a7f37;
+}
+
+.alert-box--tip .alert-box__label::before {
+    content: '💡';
+    /* Tip icon */
+    margin-right: 0.75rem;
+}
+
+.alert-box--important {
+    background-color: #f6f0ff;
+    border-left-color: #8250df;
+}
+
+.alert-box--important .alert-box__label {
+    color: #8250df;
+}
+
+.alert-box--important .alert-box__label::before {
+    content: '💎';
+    /* Important icon */
+    margin-right: 0.75rem;
+}
+
+.alert-box--warning {
+    background-color: #fff9eb;
+    border-left-color: #9a6700;
+}
+
+.alert-box--warning .alert-box__label {
+    color: #9a6700;
+}
+
+.alert-box--warning .alert-box__label::before {
+    content: '⚠️';
+    /* Warning icon */
+    margin-right: 0.75rem;
+}
+
+.alert-box--caution {
+    background-color: #fff8f8;
+    border-left-color: #cf222e;
+}
+
+.alert-box--caution .alert-box__label {
+    color: #cf222e;
+}
+
+.alert-box--caution .alert-box__label::before {
+    content: '🛑';
+    /* Caution icon */
+    margin-right: 0.75rem;
+}

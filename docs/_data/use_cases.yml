@@ -38,7 +38,7 @@
       d2kp_url: "https://aquainfra.dev.52north.org/result/zenodo:17175591"
 - region: "Mediterranean"
   trainings:
-    - title: "All Use Cases (Merged)"
+    - title: "Tordera & Llobregat delta and Malta (Merged)"
       url: "/wp6_tasks"
       description: "Collaborative case studies for the Doñana Delta, Mar Menor, and Malta."
       status: "Planned"

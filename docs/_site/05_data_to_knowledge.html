@@ -1,0 +1,333 @@
+
+   
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data to Knowledge Package | AquaINFRA Handbook</title>
+
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header-nav.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+
+    <!-- Favicon/Brand Colors -->
+    <link rel="icon" type="image/svg+xml" href="./assets/images/aquainfra_logo.svg">
+
+    <!-- System Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-system: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-system);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Main Content Wrapper -->
+    <main class="main-wrapper">
+        
+        <div class="handbook-grid">
+            <!-- Sidebar Navigation -->
+            <aside class="page-sidebar">
+    <!-- Section 1: Home -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Home</h3>
+        <ul class="sidebar__list">
+            <li><a href="./index" class="sidebar__link">Home Page</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 2: Getting Started -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Getting Started</h3>
+        <ul class="sidebar__list">
+            <li><a href="./01_eosc" class="sidebar__link">EOSC</a></li>
+            <li><a href="./02_aquainfra" class="sidebar__link">AquaINFRA</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 3 & 4: Context & Trainings -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Basic Training</h3>
+        <ul class="sidebar__list">
+            <li><a href="./03_aip" class="sidebar__link">AIP</a></li>
+            <li><a href="./04_aquainfra_vre" class="sidebar__link">VRE</a></li>
+            <li><a href="./05_data_to_knowledge" class="sidebar__link">D2KP</a></li>
+            <li><a href="./06_use_cases" class="sidebar__link">Use Cases</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 4: Training Use Cases (Dynamic)-->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Applied Use Case Training</h3>
+
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Baltic Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="./trainings/gulf-of-riga/" class="sidebar__link">
+                            Gulf of Riga
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="./wp6_tasks" class="sidebar__link">
+                            Gulf of Finland
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="./wp6_tasks" class="sidebar__link">
+                            Helcom
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>North Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="./wp6_tasks" class="sidebar__link">
+                            Hereon
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="./wp6_tasks" class="sidebar__link">
+                            Oslofjord and Glomma River
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="./wp6_tasks" class="sidebar__link">
+                            Elbe
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Pan-European</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="./trainings/pan-european-use-case/" class="sidebar__link">
+                            Pan-European Biodiversity
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Mediterranean</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="./wp6_tasks" class="sidebar__link">
+                            All Use Cases (Merged)
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Contact</h3>
+        <ul class="sidebar__list">
+            <li><a href="./07_contact" class="sidebar__link">Contact Us</a></li>
+        </ul>
+    </section>
+</aside>
+
+
+            <!-- Page Content -->
+            <div class="handbook-content">
+                <h1 id="data-to-knowledge-package-d2kp">Data to Knowledge Package (D2KP)</h1>
+
+<p>Creating readily sharable and reusable workflows is a key ambition of the <strong>AquaINFRA project</strong>. The <strong>Data-to-Knowledge Package (D2KP)</strong> is the bridge that makes this possible, linking raw aquatic data with the source code and scientific workflows needed for reproducible research.</p>
+
+<hr />
+
+<h2 id="️-video-tutorial-the-d2kp-concept">📽️ Video Tutorial: The D2KP Concept</h2>
+
+<p>Explore how D2KPs organize resources and provide multiple entry points for researchers, from high-level workflow execution to low-level code exploration.</p>
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=YLOmD-7KBFClWB1s&amp;start=262&amp;end=572" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div>
+
+<hr />
+
+<h2 id="️-the-anatomy-of-a-d2kp">🏗️ The Anatomy of a D2KP</h2>
+
+<p>A D2KP is more than just a file; it is a <strong>collection of interconnected resources</strong> categorized into two main layers:</p>
+
+<h3 id="1-the-virtual-research-environment-vre">1. The Virtual Research Environment (VRE)</h3>
+<p>The top tier of the package provides three ways to interact with the analysis:</p>
+<ul>
+  <li><strong>Galaxy Workflow</strong>: Execute the pre-configured workflow directly in the <a href="https://aqua.usegalaxy.eu/">Galaxy platform</a>.</li>
+  <li><strong>Web API (PyGEOAPI)</strong>: Interact directly with the underlying <strong>OGC API Processes</strong> for integration into your own custom scripts or digital twin infrastructures.</li>
+  <li><strong>Virtual Lab (R Studio)</strong>: Launch a containerized R Studio environment via <strong>MyBinder</strong>, pre-installed with all necessary packages for deep-dive code exploration.</li>
+</ul>
+
+<h3 id="2-the-reproducible-basis">2. The Reproducible Basis</h3>
+<p>The foundation of every package includes:</p>
+<ul>
+  <li><strong>Source Code</strong>: The raw analytical scripts (e.g., R or Python) stored in repositories like GitHub.</li>
+  <li><strong>Raw Data</strong>: Direct links to the datasets used, ensuring provenance and transparency.</li>
+</ul>
+
+<hr />
+
+<h2 id="-finding-and-using-d2kps">🔍 Finding and Using D2KPs</h2>
+
+<blockquote>
+  <p>[!TIP]
+<strong>D2KP Publication</strong>
+All official AquaINFRA workflows are released as <strong>Data-to-Knowledge Packages (D2KP)</strong> to provide citable records (DOIs). You can find these packages directly via the <strong><a href="https://aquainfra.dev.52north.org/">AIP Search Interface</a></strong> by filtering for “Data to Knowledge Package”.</p>
+</blockquote>
+
+<blockquote>
+  <p>[!NOTE]
+<strong>Interconnectivity</strong>
+When you find a dataset on the AIP, look for the “Related Content” section on the right side. This will indicate if an associated D2KP exists, showing you exactly how that data was used in previous research.</p>
+</blockquote>
+
+<hr />
+
+<!-- Navigation Buttons -->
+
+<div class="sequence-navigation">
+    <a href="04_aquainfra_vre" class="btn-seq btn-seq--prev">← Previous: VRE</a>
+    <a href="06_use_cases" class="btn-seq btn-seq--next">Next Step: Applied Use Case Training →</a>
+</div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Anchor JS for TOC links (optional, simple script) -->
+    <script>
+        // Simple script to handle smooth scroll offset for fixed header if needed
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"
+        integrity="sha384-6F4Ibv/ylL12O35KFWTeGTHuBKDz5L6yjKsgv3QHQ8s4NTqlDXq7kMlYXGs7MHFc"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            mermaid.initialize({ startOnLoad: false, theme: 'default' });
+            // Convert Jekyll/Kramdown blocks to Mermaid-compatible format
+            document.querySelectorAll('code.language-mermaid').forEach((block) => {
+                const pre = block.parentElement;
+                const content = block.textContent;
+                const div = document.createElement('div');
+                div.className = 'mermaid';
+                div.textContent = content;
+                if (pre && pre.tagName === 'PRE') {
+                    pre.parentNode.replaceChild(div, pre);
+                } else {
+                    block.parentNode.replaceChild(div, block);
+                }
+            });
+            mermaid.init(undefined, '.mermaid');
+        });
+    </script>
+    
+    <script src="./assets/js/sidebar.js"></script>
+
+    <!-- GitHub-style Alerts Transformer -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const blockquotes = document.querySelectorAll('blockquote');
+            blockquotes.forEach(bq => {
+                const firstP = bq.querySelector('p');
+                if (firstP && firstP.innerHTML.trim().startsWith('[!')) {
+                    const match = firstP.innerHTML.match(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i);
+                    if (match) {
+                        const type = match[1].toUpperCase();
+                        bq.classList.add('alert-box', `alert-box--${type.toLowerCase()}`);
+                        // Remove the trigger text [!TYPE]
+                        firstP.innerHTML = firstP.innerHTML.replace(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i, '').trim();
+                        // Prepend a title/icon if desired
+                        const label = document.createElement('div');
+                        label.className = 'alert-box__label';
+                        label.innerHTML = `<strong>${type}</strong>`;
+                        bq.insertBefore(label, bq.firstChild);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

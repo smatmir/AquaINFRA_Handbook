@@ -1,0 +1,314 @@
+
+   
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9. Reviewing the Results | AquaINFRA Handbook</title>
+
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="../.././assets/css/style.css">
+    <link rel="stylesheet" href="../.././assets/css/header-nav.css">
+    <link rel="stylesheet" href="../.././assets/css/theme.css">
+    <link rel="stylesheet" href="../.././assets/css/sidebar.css">
+
+    <!-- Favicon/Brand Colors -->
+    <link rel="icon" type="image/svg+xml" href="../.././assets/images/aquainfra_logo.svg">
+
+    <!-- System Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-system: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-system);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Main Content Wrapper -->
+    <main class="main-wrapper">
+        
+        <div class="handbook-grid">
+            <!-- Sidebar Navigation -->
+            <aside class="page-sidebar">
+    <!-- Section 1: Home -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Home</h3>
+        <ul class="sidebar__list">
+            <li><a href="../.././index" class="sidebar__link">Home Page</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 2: Getting Started -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Getting Started</h3>
+        <ul class="sidebar__list">
+            <li><a href="../.././01_eosc" class="sidebar__link">EOSC</a></li>
+            <li><a href="../.././02_aquainfra" class="sidebar__link">AquaINFRA</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 3 & 4: Context & Trainings -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Basic Training</h3>
+        <ul class="sidebar__list">
+            <li><a href="../.././03_aip" class="sidebar__link">AIP</a></li>
+            <li><a href="../.././04_aquainfra_vre" class="sidebar__link">VRE</a></li>
+            <li><a href="../.././05_data_to_knowledge" class="sidebar__link">D2KP</a></li>
+            <li><a href="../.././06_use_cases" class="sidebar__link">Use Cases</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 4: Training Use Cases (Dynamic)-->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Applied Use Case Training</h3>
+
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Baltic Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../.././trainings/gulf-of-riga/" class="sidebar__link">
+                            Gulf of Riga
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../.././wp6_tasks" class="sidebar__link">
+                            Gulf of Finland
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../.././wp6_tasks" class="sidebar__link">
+                            Helcom
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>North Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../.././wp6_tasks" class="sidebar__link">
+                            Hereon
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../.././wp6_tasks" class="sidebar__link">
+                            Oslofjord and Glomma River
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../.././wp6_tasks" class="sidebar__link">
+                            Elbe
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Pan-European</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../.././trainings/pan-european-use-case/" class="sidebar__link">
+                            Pan-European Biodiversity
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Mediterranean</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../.././wp6_tasks" class="sidebar__link">
+                            All Use Cases (Merged)
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Contact</h3>
+        <ul class="sidebar__list">
+            <li><a href="../.././07_contact" class="sidebar__link">Contact Us</a></li>
+        </ul>
+    </section>
+</aside>
+
+
+            <!-- Page Content -->
+            <div class="handbook-content">
+                <h1 id="9-reviewing-the-workflow-results">9. Reviewing the Workflow Results</h1>
+
+<p>Once all steps in your Galaxy history have turned <strong>green</strong>, your results are ready for exploration and analysis.</p>
+
+<h2 id="visualizing-output-in-galaxy">Visualizing Output in Galaxy</h2>
+<p>To view the results of any step (especially Step 8: Flag Outliers):</p>
+<ol>
+  <li>Click on the dataset name in the history panel.</li>
+  <li>Select the <strong>Eye Icon</strong> (View Data).</li>
+  <li>Galaxy will display a preview of the resulting table.</li>
+</ol>
+
+<h2 id="accessing-the-result-files">Accessing the Result Files</h2>
+<p>Each workflow step produces a text file containing a direct link to the actual results. In this use case, the results are provided in <strong>CSV format</strong>.</p>
+<ul>
+  <li>You can follow the link to download the final CSV file for use in your own local R or Python environments.</li>
+</ul>
+
+<h2 id="interpreting-outlier-classifications">Interpreting Outlier Classifications</h2>
+<p>The final output includes all extracted environmental predictors and a classification for each record based on the strength of evidence provided by the ensemble methods:</p>
+<ul>
+  <li><strong>Poor Outlier</strong></li>
+  <li><strong>Moderate Outlier</strong></li>
+  <li><strong>Fair Outlier</strong></li>
+  <li><strong>Very Strong Outlier</strong></li>
+  <li><strong>Not an Outlier</strong></li>
+</ul>
+
+<p>Researchers can use these flags to create a more robust “cleaned” dataset for their final Species Distribution Models.</p>
+
+<div class="callout">
+    <strong>📹 Video Reference</strong>
+    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&amp;t=1122s" target="_blank">18:42</a> Review the Workflow Results
+</div>
+
+<div class="sequence-navigation">
+    <a href="./08_workflow_processing" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 2</a>
+    <a href="./10_conclusion" class="btn-seq btn-seq--next">Next Chapter: Conclusion →</a>
+</div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Anchor JS for TOC links (optional, simple script) -->
+    <script>
+        // Simple script to handle smooth scroll offset for fixed header if needed
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"
+        integrity="sha384-6F4Ibv/ylL12O35KFWTeGTHuBKDz5L6yjKsgv3QHQ8s4NTqlDXq7kMlYXGs7MHFc"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            mermaid.initialize({ startOnLoad: false, theme: 'default' });
+            // Convert Jekyll/Kramdown blocks to Mermaid-compatible format
+            document.querySelectorAll('code.language-mermaid').forEach((block) => {
+                const pre = block.parentElement;
+                const content = block.textContent;
+                const div = document.createElement('div');
+                div.className = 'mermaid';
+                div.textContent = content;
+                if (pre && pre.tagName === 'PRE') {
+                    pre.parentNode.replaceChild(div, pre);
+                } else {
+                    block.parentNode.replaceChild(div, block);
+                }
+            });
+            mermaid.init(undefined, '.mermaid');
+        });
+    </script>
+    
+    <script src="../.././assets/js/sidebar.js"></script>
+
+    <!-- GitHub-style Alerts Transformer -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const blockquotes = document.querySelectorAll('blockquote');
+            blockquotes.forEach(bq => {
+                const firstP = bq.querySelector('p');
+                if (firstP && firstP.innerHTML.trim().startsWith('[!')) {
+                    const match = firstP.innerHTML.match(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i);
+                    if (match) {
+                        const type = match[1].toUpperCase();
+                        bq.classList.add('alert-box', `alert-box--${type.toLowerCase()}`);
+                        // Remove the trigger text [!TYPE]
+                        firstP.innerHTML = firstP.innerHTML.replace(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i, '').trim();
+                        // Prepend a title/icon if desired
+                        const label = document.createElement('div');
+                        label.className = 'alert-box__label';
+                        label.innerHTML = `<strong>${type}</strong>`;
+                        bq.insertBefore(label, bq.firstChild);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

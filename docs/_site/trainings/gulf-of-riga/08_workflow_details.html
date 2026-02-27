@@ -1,0 +1,364 @@
+
+  <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>8. Workflow Details | AquaINFRA Handbook</title>
+
+        <!-- Design System CSS -->
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="../../assets/css/header-nav.css">
+        <link rel="stylesheet" href="../../assets/css/theme.css">
+        <link rel="stylesheet" href="../../assets/css/sidebar.css">
+
+        <!-- Favicon/Brand Colors -->
+        <link rel="icon" type="image/svg+xml" href="../../assets/images/aquainfra_logo.svg">
+
+        <!-- System Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <style>
+            :root {
+                --font-system: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+
+            body {
+                font-family: var(--font-system);
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+        <!-- Main Content Wrapper -->
+        <main class="main-wrapper">
+            
+            <div class="handbook-grid">
+                <!-- Sidebar Navigation -->
+                <aside class="page-sidebar">
+    <!-- Section 1: Home -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Home</h3>
+        <ul class="sidebar__list">
+            <li><a href="../../index" class="sidebar__link">Home Page</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 2: Getting Started -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Getting Started</h3>
+        <ul class="sidebar__list">
+            <li><a href="../../01_eosc" class="sidebar__link">EOSC</a></li>
+            <li><a href="../../02_aquainfra" class="sidebar__link">AquaINFRA</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 3 & 4: Context & Trainings -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Basic Training</h3>
+        <ul class="sidebar__list">
+            <li><a href="../../03_aip" class="sidebar__link">AIP</a></li>
+            <li><a href="../../04_aquainfra_vre" class="sidebar__link">VRE</a></li>
+            <li><a href="../../05_data_to_knowledge" class="sidebar__link">D2KP</a></li>
+            <li><a href="../../06_use_cases" class="sidebar__link">Use Cases</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 4: Training Use Cases (Dynamic)-->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Applied Use Case Training</h3>
+
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Baltic Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../../trainings/gulf-of-riga/" class="sidebar__link">
+                            Gulf of Riga
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            Gulf of Finland
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            Helcom
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>North Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            Hereon
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            Oslofjord and Glomma River
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            Elbe
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Pan-European</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../../trainings/pan-european-use-case/" class="sidebar__link">
+                            Pan-European Biodiversity
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Mediterranean</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            All Use Cases (Merged)
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Contact</h3>
+        <ul class="sidebar__list">
+            <li><a href="../../07_contact" class="sidebar__link">Contact Us</a></li>
+        </ul>
+    </section>
+</aside>
+
+                <!-- Page Content -->
+                <div class="handbook-content">
+                    <h1 id="the-gulf-of-riga-dga-workflow">The Gulf of Riga DGA Workflow</h1>
+
+<p>This chapter details the specific “Data Gathering and Analysis” (DGA) workflow used in the case study. The workflow integrates <strong>eight distinct tools</strong> into a pipeline.</p>
+
+<h2 id="1-input-data">1. Input Data</h2>
+<p>The workflow starts with two datasets:</p>
+
+<pre><code class="language-mermaid">graph LR
+    A[Input Data] --&gt; B[Pre-Processing]
+    B --&gt; C[Spatial Aggregation]
+    B --&gt; D[Temporal Aggregation]
+    C --&gt; E[Trend Analysis]
+    D --&gt; E
+    E --&gt; F[Results]
+</code></pre>
+
+<ol>
+  <li><strong>Point Data</strong>: In-situ measurements of Secchi depth (water transparency).</li>
+  <li><strong>Polygon Data</strong>: Assessment unit polygons defining the spatial boundaries of the regions being studied.</li>
+</ol>
+
+<h2 id="2-pre-processing">2. Pre-Processing</h2>
+
+<h3 id="spatial-aggregation">Spatial Aggregation</h3>
+<ul>
+  <li><strong>Goal</strong>: Assign scattered data points to specific administrative or geographical units.</li>
+  <li><strong>Process</strong>: Points are mapped to “Assessment Unit” polygons. A new attribute is added to each data point indicating which unit it falls into.</li>
+</ul>
+
+<h3 id="temporal-aggregation">Temporal Aggregation</h3>
+<ul>
+  <li><strong>Goal</strong>: Account for seasonality (crucial in the Gulf of Riga).</li>
+  <li><strong>Process</strong>: Based on the visit date, each point is assigned a <strong>Season</strong> (e.g., Spring, Summer).</li>
+</ul>
+
+<h2 id="3-data-analysis-steps">3. Data Analysis Steps</h2>
+
+<h3 id="calculate-mean-values-group-1">Calculate Mean Values (Group 1)</h3>
+<p>Calculates the average transparency for granular groups defined by:</p>
+<ul>
+  <li>Season</li>
+  <li>Year</li>
+  <li>Assessment Unit ID</li>
+  <li>Location</li>
+</ul>
+
+<h3 id="calculate-mean-values-group-2">Calculate Mean Values (Group 2)</h3>
+<p>Further aggregates the data to get a single value per unit-year-season.</p>
+<ul>
+  <li><strong>Output</strong>: A structured CSV file where each record represents a transparency value for a specific unit, year, and season.</li>
+</ul>
+
+<h3 id="time-series-interpolation">Time Series Interpolation</h3>
+<p>To prepare for trend analysis, the data must be continuous.</p>
+
+<blockquote class="important">
+  <p><strong>Exclusion Criteria</strong>:</p>
+  <ul>
+    <li>Units with <strong>&lt; 10 data points</strong> are excluded.</li>
+    <li>Units where <strong>&gt; 80% of data is missing</strong> (compared to the time series length) are excluded.</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li><strong>Interpolation</strong>: For the remaining units, missing values are statistically interpolated to fill gaps.</li>
+</ul>
+
+<h3 id="mann-kendall-trend-analysis">Mann-Kendall Trend Analysis</h3>
+<p>The final analytical step.</p>
+<ul>
+  <li><strong>Method</strong>: A <strong>Mann-Kendall test</strong> (non-parametric statistical test) is applied.</li>
+  <li><strong>Purpose</strong>: To detect if there is a monotonic upward or downward trend in the Secchi depth variable over time.</li>
+</ul>
+
+<h2 id="4-visualization">4. Visualization</h2>
+<p>The workflow automatically generates:</p>
+<ol>
+  <li><strong>Interactive Map</strong>: Showing the assessment units.</li>
+  <li><strong>Bar Chart</strong>: Displaying <strong>Kendall’s Tau</strong> values. A negative Tau indicates a decreasing trend (darkening), while positive indicates clearing.</li>
+</ol>
+
+<hr />
+
+<div class="callout">
+    <strong>📹 Video Reference</strong>
+    <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&amp;t=1289s" target="_blank">21:29</a> Detailed Review of the Workflow Components
+</div>
+
+<div class="sequence-navigation">
+    <a href="trainings/gulf-of-riga/07_hands_on_tutorial" class="btn-seq btn-seq--prev">← Previous: Hands-On Tutorial</a>
+    <a href="trainings/gulf-of-riga/09_results" class="btn-seq btn-seq--next">Next Chapter: Results →</a>
+</div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+
+                </div>
+            </div>
+        </main>
+
+
+        <!-- Anchor JS for TOC links (optional, simple script) -->
+        <script>
+            // Simple script to handle smooth scroll offset for fixed header if needed
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"
+            integrity="sha384-6F4Ibv/ylL12O35KFWTeGTHuBKDz5L6yjKsgv3QHQ8s4NTqlDXq7kMlYXGs7MHFc"
+            crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                mermaid.initialize({ startOnLoad: false, theme: 'default' });
+                // Convert Jekyll/Kramdown blocks to Mermaid-compatible format
+                document.querySelectorAll('code.language-mermaid').forEach((block) => {
+                    const pre = block.parentElement;
+                    const content = block.textContent;
+                    const div = document.createElement('div');
+                    div.className = 'mermaid';
+                    div.textContent = content;
+                    if (pre && pre.tagName === 'PRE') {
+                        pre.parentNode.replaceChild(div, pre);
+                    } else {
+                        block.parentNode.replaceChild(div, block);
+                    }
+                });
+                mermaid.init(undefined, '.mermaid');
+            });
+        </script>
+        
+        <script src="../../assets/js/sidebar.js"></script>
+
+        <!-- GitHub-style Alerts Transformer -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const blockquotes = document.querySelectorAll('blockquote');
+                blockquotes.forEach(bq => {
+                    const firstP = bq.querySelector('p');
+                    if (firstP && firstP.innerHTML.trim().startsWith('[!')) {
+                        const match = firstP.innerHTML.match(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i);
+                        if (match) {
+                            const type = match[1].toUpperCase();
+                            bq.classList.add('alert-box', `alert-box--${type.toLowerCase()}`);
+                            // Remove the trigger text [!TYPE]
+                            firstP.innerHTML = firstP.innerHTML.replace(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i, '').trim();
+                            // Prepend a title/icon if desired
+                            const label = document.createElement('div');
+                            label.className = 'alert-box__label';
+                            label.innerHTML = `<strong>${type}</strong>`;
+                            bq.insertBefore(label, bq.firstChild);
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+
+    </html>

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gulf of Riga Case Study
+hero_title: "Gulf of Riga: DGA Workflow"
 region: "Baltic Sea"
 use_case: true
 ---

@@ -1,0 +1,564 @@
+
+  <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>7. Hands-On Tutorial | AquaINFRA Handbook</title>
+
+        <!-- Design System CSS -->
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="../../assets/css/header-nav.css">
+        <link rel="stylesheet" href="../../assets/css/theme.css">
+        <link rel="stylesheet" href="../../assets/css/sidebar.css">
+
+        <!-- Favicon/Brand Colors -->
+        <link rel="icon" type="image/svg+xml" href="../../assets/images/aquainfra_logo.svg">
+
+        <!-- System Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <style>
+            :root {
+                --font-system: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+
+            body {
+                font-family: var(--font-system);
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+        <!-- Main Content Wrapper -->
+        <main class="main-wrapper">
+            
+            <div class="handbook-grid">
+                <!-- Sidebar Navigation -->
+                <aside class="page-sidebar">
+    <!-- Section 1: Home -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Home</h3>
+        <ul class="sidebar__list">
+            <li><a href="../../index" class="sidebar__link">Home Page</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 2: Getting Started -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Getting Started</h3>
+        <ul class="sidebar__list">
+            <li><a href="../../01_eosc" class="sidebar__link">EOSC</a></li>
+            <li><a href="../../02_aquainfra" class="sidebar__link">AquaINFRA</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 3 & 4: Context & Trainings -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Basic Training</h3>
+        <ul class="sidebar__list">
+            <li><a href="../../03_aip" class="sidebar__link">AIP</a></li>
+            <li><a href="../../04_aquainfra_vre" class="sidebar__link">VRE</a></li>
+            <li><a href="../../05_data_to_knowledge" class="sidebar__link">D2KP</a></li>
+            <li><a href="../../06_use_cases" class="sidebar__link">Use Cases</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 4: Training Use Cases (Dynamic)-->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Applied Use Case Training</h3>
+
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Baltic Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../../trainings/gulf-of-riga/" class="sidebar__link">
+                            Gulf of Riga
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            Gulf of Finland
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            Helcom
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>North Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            Hereon
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            Oslofjord and Glomma River
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            Elbe
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Pan-European</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../../trainings/pan-european-use-case/" class="sidebar__link">
+                            Pan-European Biodiversity
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Mediterranean</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="../../wp6_tasks" class="sidebar__link">
+                            All Use Cases (Merged)
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Contact</h3>
+        <ul class="sidebar__list">
+            <li><a href="../../07_contact" class="sidebar__link">Contact Us</a></li>
+        </ul>
+    </section>
+</aside>
+
+                <!-- Page Content -->
+                <div class="handbook-content">
+                    <h1 id="hands-on-running-the-gulf-of-riga-workflow">Hands-On: Running the Gulf of Riga Workflow</h1>
+
+<p>This chapter provides <strong>step-by-step instructions</strong> for running the DGA workflow in Aqua Galaxy. Follow along with the video for visual guidance.</p>
+
+<div class="callout">
+    <strong>📹 Video Reference</strong><br />
+    This tutorial corresponds to <strong>12:18 - 25:07</strong> in the <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&amp;t=738s" target="_blank">YouTube video</a>.
+</div>
+
+<hr />
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before starting, ensure you have:</p>
+<ol>
+  <li>✅ Registered for an <strong>Aqua Galaxy</strong> account</li>
+  <li>✅ Signed into the <strong>AquaINFRA Interaction Platform</strong></li>
+</ol>
+
+<hr />
+
+<h2 id="step-1-import-input-data">Step 1: Import Input Data</h2>
+
+<p>The workflow requires <strong>two datasets</strong> to run.</p>
+
+<h3 id="11-import-secchi-depth-point-data">1.1 Import Secchi Depth Point Data</h3>
+
+<p><strong>📹 Video: <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&amp;t=769s">12:49 - 15:19</a></strong></p>
+
+<ol>
+  <li>Navigate to the <strong>Data-to-Knowledge Package</strong> page on the AIP</li>
+  <li>Click on <strong>“Latvian Secchi depth and water color”</strong></li>
+  <li>You’ll see three options:
+    <ul>
+      <li>Direct download link</li>
+      <li>Zenodo repository page</li>
+      <li><strong>AquaINFRA dataset page</strong> ← Select this one</li>
+    </ul>
+  </li>
+  <li>On the dataset page, click <strong>“Import to Galaxy”</strong></li>
+  <li>The <strong>OGC API Features subsetting window</strong> opens:
+    <ul>
+      <li><strong>Bounding Box</strong>: Leave default (or customize for specific area)</li>
+      <li><strong>Number of Points</strong>: Set to <strong><code class="language-plaintext highlighter-rouge">5871</code></strong> (total available points)</li>
+      <li><strong>Query Parameters</strong>: Leave empty (we need all data)</li>
+    </ul>
+  </li>
+  <li>Click <strong>“Regenerate”</strong> to update the link</li>
+  <li>Click <strong>“Import”</strong></li>
+  <li>You’ll be redirected to <strong>Aqua Galaxy</strong></li>
+</ol>
+
+<div class="callout">
+    <strong>⏳ Import Status</strong><br />
+    In the History panel (right side):<br />
+    • <strong>Gray</strong> = Queued<br />
+    • <strong>Orange</strong> = Processing<br />
+    • <strong>Green</strong> = Complete<br />
+    • <strong>Red</strong> = Error
+</div>
+
+<ol>
+  <li><strong>Rename the dataset</strong> for clarity:
+    <ul>
+      <li>Click the <strong>pencil icon</strong> (Edit)</li>
+      <li>Rename to: <strong><code class="language-plaintext highlighter-rouge">points</code></strong></li>
+      <li>Add annotation: “Latvian Secchi depth measurements”</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h3 id="12-import-helcom-assessment-unit-regions">1.2 Import HELCOM Assessment Unit Regions</h3>
+
+<p><strong>📹 Video: <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&amp;t=919s">15:19 - 19:51</a></strong></p>
+
+<ol>
+  <li>Return to the <strong>Data-to-Knowledge Package</strong> page</li>
+  <li>Click on <strong>“HELCOM subbasins”</strong></li>
+  <li>Click <strong>“AquaINFRA”</strong> to view the dataset page</li>
+  <li>Click <strong>“Visit”</strong> to explore original metadata</li>
+  <li>You’ll find two links:
+    <ul>
+      <li>Direct data access link</li>
+      <li>HELCOM interactive map</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="callout callout--warning">
+    <strong>⚠️ Important: Data Usage Disclaimer</strong><br />
+    HELCOM data requires accepting a usage disclaimer before import.
+</div>
+
+<ol>
+  <li><strong>Accept the disclaimer</strong>:
+    <ul>
+      <li>Open the <strong>direct download link</strong> in a new tab</li>
+      <li>Accept the <strong>data usage disclaimer</strong></li>
+      <li>Wait for the download link to activate (don’t download the file)</li>
+      <li><strong>Copy the activated download URL</strong></li>
+    </ul>
+  </li>
+  <li><strong>Import to Galaxy</strong>:
+    <ul>
+      <li>Return to the AIP dataset page</li>
+      <li>Paste the URL into the <strong>import field</strong></li>
+      <li>Click <strong>“Import”</strong></li>
+    </ul>
+  </li>
+  <li>Wait for the green status indicator</li>
+  <li><strong>Rename the dataset</strong>:
+    <ul>
+      <li>Click the pencil icon</li>
+      <li>Rename to: <strong><code class="language-plaintext highlighter-rouge">regions</code></strong></li>
+      <li>Add annotation: “HELCOM assessment unit polygons”</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="step-2-import-the-workflow">Step 2: Import the Workflow</h2>
+
+<p><strong>📹 Video: <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&amp;t=1191s">19:51 - 21:29</a></strong></p>
+
+<h3 id="method-1-direct-import-from-aip">Method 1: Direct Import from AIP</h3>
+
+<ol>
+  <li>In the Data-to-Knowledge Package, click <strong>“Galaxy”</strong> under the workflow section</li>
+  <li>You’ll be redirected to the <strong>workflow preview page</strong> in Aqua Galaxy</li>
+  <li>Click <strong>“Import”</strong></li>
+  <li>Click <strong>“Start using this workflow”</strong></li>
+</ol>
+
+<h3 id="method-2-manual-import">Method 2: Manual Import</h3>
+
+<ol>
+  <li>Navigate to <strong>Workflows</strong> in Aqua Galaxy (top menu)</li>
+  <li>Click <strong>“Import”</strong></li>
+  <li>Upload the workflow file (<code class="language-plaintext highlighter-rouge">.ga</code> format) from Zenodo</li>
+</ol>
+
+<hr />
+
+<h2 id="step-3-run-the-workflow">Step 3: Run the Workflow</h2>
+
+<p><strong>📹 Video: <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&amp;t=1289s">21:29 - 25:07</a></strong></p>
+
+<ol>
+  <li>In the <strong>Workflows</strong> section, find “Gulf of Riga DGA Workflow”</li>
+  <li>Click the <strong>dropdown arrow</strong> → Select <strong>“Run”</strong></li>
+  <li>On the workflow run page:
+    <ul>
+      <li><strong>Input 1 (Point Data)</strong>: Select <strong><code class="language-plaintext highlighter-rouge">points</code></strong></li>
+      <li><strong>Input 2 (Region Data)</strong>: Select <strong><code class="language-plaintext highlighter-rouge">regions</code></strong></li>
+    </ul>
+  </li>
+  <li><strong>(Optional)</strong> Click <strong>“Expand to full workflow”</strong> to customize parameters:
+    <ul>
+      <li>Threshold for missing values</li>
+      <li>Minimum number of data points</li>
+      <li>Interpolation settings</li>
+    </ul>
+  </li>
+  <li>Click <strong>“Run Workflow”</strong></li>
+</ol>
+
+<hr />
+
+<h2 id="step-4-monitor-progress">Step 4: Monitor Progress</h2>
+
+<p><strong>📹 Video: <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&amp;t=1295s">21:35 - 25:07</a></strong></p>
+
+<p>You’ll be taken to a <strong>progress page</strong> showing:</p>
+
+<h3 id="interactive-workflow-graph">Interactive Workflow Graph</h3>
+<ul>
+  <li>Visual representation of each step</li>
+  <li>Color-coded status (gray → orange → green)</li>
+  <li>Click on any step to see details</li>
+</ul>
+
+<h3 id="history-panel">History Panel</h3>
+<ul>
+  <li>Lists all outputs chronologically</li>
+  <li>Shows job metrics (runtime, memory usage)</li>
+  <li>Provides download links for results</li>
+</ul>
+
+<hr />
+
+<h2 id="step-5-review-outputs">Step 5: Review Outputs</h2>
+
+<p><strong>📹 Video: <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&amp;t=1518s">25:18 - 29:08</a></strong></p>
+
+<h3 id="key-outputs-to-check">Key Outputs to Check:</h3>
+
+<h4 id="1-spatial-aggregation-output">1. Spatial Aggregation Output</h4>
+<ul>
+  <li><strong>File</strong>: Points with assessment unit IDs</li>
+  <li><strong>What to look for</strong>: Each point now has a <code class="language-plaintext highlighter-rouge">unit_id</code> attribute</li>
+</ul>
+
+<h4 id="2-temporal-aggregation-output">2. Temporal Aggregation Output</h4>
+<ul>
+  <li><strong>File</strong>: Points with season assignments</li>
+  <li><strong>What to look for</strong>: New <code class="language-plaintext highlighter-rouge">season</code> column (Spring, Summer, Autumn, Winter)</li>
+</ul>
+
+<h4 id="3-interpolated-time-series">3. Interpolated Time Series</h4>
+<ul>
+  <li><strong>File</strong>: CSV with continuous data</li>
+  <li><strong>What to look for</strong>: Gaps filled, units with &lt;10 points excluded</li>
+</ul>
+
+<h4 id="4-mann-kendall-results">4. Mann-Kendall Results</h4>
+<ul>
+  <li><strong>File</strong>: Statistical test results</li>
+  <li><strong>What to look for</strong>: Kendall’s Tau values (negative = darkening trend)</li>
+</ul>
+
+<h4 id="5-interactive-map">5. Interactive Map</h4>
+<ul>
+  <li><strong>File</strong>: <code class="language-plaintext highlighter-rouge">map_shape_file_points.html</code></li>
+  <li><strong>Action</strong>: Click the eye icon → Open in new tab</li>
+  <li><strong>What to see</strong>: Assessment units color-coded by trend</li>
+</ul>
+
+<h4 id="6-bar-chart">6. Bar Chart</h4>
+<ul>
+  <li><strong>File</strong>: Kendall’s Tau visualization</li>
+  <li><strong>What to see</strong>: Negative bars indicate decreasing transparency</li>
+</ul>
+
+<hr />
+
+<h2 id="step-6-interpret-results">Step 6: Interpret Results</h2>
+
+<p><strong>📹 Video: <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&amp;t=1691s">28:11 - 29:08</a></strong></p>
+
+<h3 id="example-results-from-video">Example Results from Video:</h3>
+
+<p>The workflow identified <strong>significant negative trends</strong> in:</p>
+<ul>
+  <li><strong>LAT-003</strong> (Summer) - Negative Tau</li>
+  <li><strong>LAT-004</strong> (Summer) - Negative Tau</li>
+  <li><strong>LAT-005</strong> (Autumn) - Negative Tau</li>
+</ul>
+
+<p><strong>Location</strong>: All three units are along the <strong>Latvian coastline</strong>. LAT-005 includes the <strong>Daugava River catchment</strong> near Riga.</p>
+
+<p><strong>Interpretation</strong>: Water transparency is <strong>decreasing</strong> (darkening) in these coastal regions, confirming the scuba divers’ observations.</p>
+
+<hr />
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<h3 id="issue-import-fails-red-status">Issue: Import Fails (Red Status)</h3>
+<ul>
+  <li><strong>Solution</strong>: Check your internet connection, try re-importing</li>
+</ul>
+
+<h3 id="issue-workflow-stuck-orange-for-10-minutes">Issue: Workflow Stuck (Orange for &gt;10 minutes)</h3>
+<ul>
+  <li><strong>Solution</strong>: Refresh the page, check server status</li>
+</ul>
+
+<h3 id="issue-no-results-generated">Issue: No Results Generated</h3>
+<ul>
+  <li><strong>Solution</strong>: Verify both input datasets were correctly imported and renamed</li>
+</ul>
+
+<hr />
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>After successfully running the workflow:</p>
+<ol>
+  <li>✅ Download the results for your records</li>
+  <li>✅ Experiment with different parameters</li>
+  <li>✅ Try applying the workflow to your own data</li>
+  <li>✅ Explore other AquaINFRA workflows</li>
+</ol>
+
+<hr />
+
+<div class="sequence-navigation">
+    <a href="trainings/gulf-of-riga/06_workflow_concept" class="btn-seq btn-seq--prev">← Previous: Workflow Concept</a>
+    <a href="trainings/gulf-of-riga/08_workflow_details" class="btn-seq btn-seq--next">Next Chapter: Workflow Details →</a>
+</div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+
+                </div>
+            </div>
+        </main>
+
+
+        <!-- Anchor JS for TOC links (optional, simple script) -->
+        <script>
+            // Simple script to handle smooth scroll offset for fixed header if needed
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"
+            integrity="sha384-6F4Ibv/ylL12O35KFWTeGTHuBKDz5L6yjKsgv3QHQ8s4NTqlDXq7kMlYXGs7MHFc"
+            crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                mermaid.initialize({ startOnLoad: false, theme: 'default' });
+                // Convert Jekyll/Kramdown blocks to Mermaid-compatible format
+                document.querySelectorAll('code.language-mermaid').forEach((block) => {
+                    const pre = block.parentElement;
+                    const content = block.textContent;
+                    const div = document.createElement('div');
+                    div.className = 'mermaid';
+                    div.textContent = content;
+                    if (pre && pre.tagName === 'PRE') {
+                        pre.parentNode.replaceChild(div, pre);
+                    } else {
+                        block.parentNode.replaceChild(div, block);
+                    }
+                });
+                mermaid.init(undefined, '.mermaid');
+            });
+        </script>
+        
+        <script src="../../assets/js/sidebar.js"></script>
+
+        <!-- GitHub-style Alerts Transformer -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const blockquotes = document.querySelectorAll('blockquote');
+                blockquotes.forEach(bq => {
+                    const firstP = bq.querySelector('p');
+                    if (firstP && firstP.innerHTML.trim().startsWith('[!')) {
+                        const match = firstP.innerHTML.match(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i);
+                        if (match) {
+                            const type = match[1].toUpperCase();
+                            bq.classList.add('alert-box', `alert-box--${type.toLowerCase()}`);
+                            // Remove the trigger text [!TYPE]
+                            firstP.innerHTML = firstP.innerHTML.replace(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i, '').trim();
+                            // Prepend a title/icon if desired
+                            const label = document.createElement('div');
+                            label.className = 'alert-box__label';
+                            label.innerHTML = `<strong>${type}</strong>`;
+                            bq.insertBefore(label, bq.firstChild);
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+
+    </html>

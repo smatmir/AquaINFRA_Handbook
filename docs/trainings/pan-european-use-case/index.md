@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Pan-European Biodiversity Use Case
-has_children: true
+hero_title: "Pan-European Biodiversity"
 nav_order: 3
 ---
 

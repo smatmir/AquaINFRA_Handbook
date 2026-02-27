@@ -1,0 +1,388 @@
+
+  <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduction to AquaINFRA | AquaINFRA Handbook</title>
+
+        <!-- Design System CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/header-nav.css">
+        <link rel="stylesheet" href="assets/css/theme.css">
+        <link rel="stylesheet" href="assets/css/sidebar.css">
+
+        <!-- Favicon/Brand Colors -->
+        <link rel="icon" type="image/svg+xml" href="assets/images/aquainfra_logo.svg">
+
+        <!-- System Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <style>
+            :root {
+                --font-system: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+
+            body {
+                font-family: var(--font-system);
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+        <!-- Main Content Wrapper -->
+        <main class="main-wrapper">
+            
+            <div class="handbook-grid">
+                <!-- Sidebar Navigation -->
+                <aside class="page-sidebar">
+    <!-- Section 1: Home -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Home</h3>
+        <ul class="sidebar__list">
+            <li><a href="index" class="sidebar__link">Home Page</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 2: Getting Started -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Getting Started</h3>
+        <ul class="sidebar__list">
+            <li><a href="01_eosc" class="sidebar__link">EOSC</a></li>
+            <li><a href="02_aquainfra" class="sidebar__link">AquaINFRA</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 3 & 4: Context & Trainings -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Basic Training</h3>
+        <ul class="sidebar__list">
+            <li><a href="03_aip" class="sidebar__link">AIP</a></li>
+            <li><a href="04_aquainfra_vre" class="sidebar__link">VRE</a></li>
+            <li><a href="05_data_to_knowledge" class="sidebar__link">D2KP</a></li>
+            <li><a href="06_use_cases" class="sidebar__link">Use Cases</a></li>
+        </ul>
+    </section>
+
+    <!-- Section 4: Training Use Cases (Dynamic)-->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Applied Use Case Training</h3>
+
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Baltic Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="trainings/gulf-of-riga/" class="sidebar__link">
+                            Gulf of Riga
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="wp6_tasks" class="sidebar__link">
+                            Gulf of Finland
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="wp6_tasks" class="sidebar__link">
+                            Helcom
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>North Sea</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="wp6_tasks" class="sidebar__link">
+                            Hereon
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="wp6_tasks" class="sidebar__link">
+                            Oslofjord and Glomma River
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="wp6_tasks" class="sidebar__link">
+                            Elbe
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Pan-European</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="trainings/pan-european-use-case/" class="sidebar__link">
+                            Pan-European Biodiversity
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar__region">
+            <button class="region-accordion" onclick="toggleRegion(this)">
+                <span>Mediterranean</span>
+                <span class="sidebar__chevron">&#9654;</span>
+            </button>
+
+            
+            <div class="region-content">
+                <ul class="sidebar__list">
+                    
+                    <li>
+                        <a href="wp6_tasks" class="sidebar__link">
+                            All Use Cases (Merged)
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section class="sidebar__section">
+        <h3 class="sidebar__heading">Contact</h3>
+        <ul class="sidebar__list">
+            <li><a href="07_contact" class="sidebar__link">Contact Us</a></li>
+        </ul>
+    </section>
+</aside>
+
+                <!-- Page Content -->
+                <div class="handbook-content">
+                    <h1 id="introduction-aquainfra">Introduction AquaINFRA</h1>
+
+<p>The <strong>AquaINFRA project</strong> (2023–2026) is developing a next-generation virtual environment equipped with <strong>FAIR</strong> (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services.</p>
+
+<p>Our mission is to support marine and freshwater scientists and stakeholders in <strong>restoring healthy oceans, seas, coastal, and inland waters</strong> by bridging the gap between isolated research infrastructures and national borders.</p>
+
+<blockquote>
+  <p>[!IMPORTANT]
+<strong>Main Resource:</strong> For the most up-to-date project news and developments, visit the official <strong><a href="https://aquainfra.eu">AquaINFRA Website</a></strong>.</p>
+</blockquote>
+
+<h2 id="️-video-tutorial-getting-started">📽️ Video Tutorial: Getting Started</h2>
+
+<p>Learn how to search for data on the AIP, subset it via DDAS, and import it directly into your analysis history in Galaxy.</p>
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=r0Zy6qJLRFdxNqYB&amp;start=0&amp;end=68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="core-objectives">Core Objectives:</h3>
+
+<ul>
+  <li><strong>Marine-Freshwater Integration</strong>: Breaking silos to enable joint collaboration across the entire land-sea continuum.</li>
+  <li><strong>EOSC-Based Infrastructure</strong>: Building a cross-country discovery mechanism as part of the European Open Science Cloud (EOSC).</li>
+  <li><strong>Spatio-temporal Analysis</strong>: Providing standardized services for biological, chemical, and physical data modeling.</li>
+  <li><strong>Reproducible Science</strong>: Ensuring that every analytical workflow can be shared, reused, and validated by the community.</li>
+</ul>
+
+<h3 id="project-methodology-official-architecture">Project Methodology: Official Architecture</h3>
+
+<p>The AquaINFRA ecosystem connects disparate data sources through a unified analytical pipeline, ensuring interoperability with the <strong>Digital Twin of the Ocean (DTO)</strong> and <strong>EOSC</strong> components.</p>
+
+<p><img src="assets/images/aip_vre.png" alt="AquaINFRA Architecture" /></p>
+
+<blockquote>
+  <p>[!NOTE]
+AquaINFRA works in close collaboration with projects like <strong>Blue-Cloud</strong>, <strong>ILIAD</strong>, and <strong>EDITO</strong> to enhance the Digital Twins of the Ocean with high-quality aquatic data and models.</p>
+</blockquote>
+
+<hr />
+
+<h1 id="partners--target">Partners &amp; Target</h1>
+
+<p>The AquaINFRA project is a collaborative effort involving a consortium of <strong>21 international partners</strong> across Europe, including universities, SMEs, and research institutions.</p>
+
+<div class="grid-container">
+    <div class="info-block">
+        <h3><span style="color: #3564AC;">Who</span> is it for?</h3>
+        <p>Marine and freshwater scientists, data analysts, and researchers looking for reproducible workflows and FAIR data services.</p>
+    </div>
+    <div class="info-block">
+        <h3><span style="color: #3564AC;">Why</span> use it?</h3>
+        <p>To access multidisciplinary data, high-performance computing resources, and standardized analytical pipelines in a unified virtual environment.</p>
+    </div>
+    <div class="info-block">
+        <h3><span style="color: #3564AC;">What</span> is provided?</h3>
+        <p>Pre-configured tools (e.g., Galaxy, Jupyter), harmonized datasets, and step-by-step training modules for real-world environmental use cases.</p>
+    </div>
+    <div class="info-block">
+        <h3><span style="color: #3564AC;">How</span> to contribute?</h3>
+        <p>Researchers can share their own notebooks, tools, and datasets through the AquaINFRA infrastructure to foster community collaboration.</p>
+    </div>
+</div>
+
+<hr style="margin: 3rem 0;" />
+
+<h1 id="our-consortium">Our Consortium</h1>
+
+<p>Coordinated by <strong>Aalborg University (AAU)</strong> in Denmark, our partnership brings together leading experts in aquatic science and data technology.</p>
+
+<p><strong>Representative Partners:</strong></p>
+
+<ul>
+  <li><strong>Scientific Institutions</strong>: BOKU (Austria), CSIC (Spain), CREAF (Spain), SYKE (Finland), NIVA (Norway), HEREON (Germany).</li>
+  <li><strong>Infrastructures &amp; Organizations</strong>: HELCOM (Baltic Sea), CSC (Finland), Maanmittauslaitos (Finland).</li>
+  <li><strong>Technical Specialists</strong>: 52°North (Germany), Blue Lobster IT (UK).</li>
+</ul>
+
+<p><a href="https://aquainfra.eu/partners">View the full partner list on the official site</a></p>
+
+<hr />
+
+<h1 id="the-aquainfra-virtual-research-environment">The AquaINFRA Virtual Research Environment</h1>
+
+<p>The <strong>AquaINFRA Virtual Research Environment (VRE)</strong> is a modular and extensible platform built on established open-source technologies. It serves as the analytical engine of the project, enabling researchers to run complex workflows through a user-friendly interface.</p>
+
+<h3 id="key-technologies">Key Technologies</h3>
+
+<ul>
+  <li><strong><a href="https://aqua.usegalaxy.eu/">Galaxy Platform</a></strong>: A powerful web-based gateway for accessible and reproducible genomic and spatial analysis.</li>
+  <li><strong><a href="https://aquainfra.dev.52north.org/">Aqua Interaction Platform (AIP)</a></strong>: Seamlessly search and discover data across Earth observations and European hydrography.</li>
+  <li><strong>Binder &amp; OGC API</strong>: Integrated services for interactive computing and standardized data processing.</li>
+  <li><strong>Language Support</strong>: Native support for <strong>R</strong> and <strong>Python</strong> environments.</li>
+</ul>
+
+<h3 id="why-use-the-vre">Why use the VRE?</h3>
+
+<ol>
+  <li><strong>FAIR Processing</strong>: Workflows developed in our case studies are published as <strong>D2KP</strong> with full provenance.</li>
+  <li><strong>Cross-Domain Discovery</strong>: Discover aquatic digital resources across disciplines and national borders.</li>
+  <li><strong>High-Performance Computing</strong>: Access the resources needed for large-scale spatio-temporal modeling.</li>
+</ol>
+
+<blockquote>
+  <p>[!TIP]
+Visit the <a href="https://aquainfra.dev.52north.org/">AquaINFRA VRE Portal</a> to explore community-tailored tools and start your first analysis.</p>
+</blockquote>
+
+<hr />
+
+<!-- Navigation Buttons -->
+
+<div class="sequence-navigation">
+    <a href="01_eosc" class="btn-seq btn-seq--prev">← Previous: EOSC</a>
+    <a href="03_aip" class="btn-seq btn-seq--next">Next Step: AIP →</a>
+</div>
+
+<div class="wave-decoration" style="margin: 0 -2rem -2rem -2rem; height: 100px; background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);"></div>
+
+                </div>
+            </div>
+        </main>
+
+
+        <!-- Anchor JS for TOC links (optional, simple script) -->
+        <script>
+            // Simple script to handle smooth scroll offset for fixed header if needed
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"
+            integrity="sha384-6F4Ibv/ylL12O35KFWTeGTHuBKDz5L6yjKsgv3QHQ8s4NTqlDXq7kMlYXGs7MHFc"
+            crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                mermaid.initialize({ startOnLoad: false, theme: 'default' });
+                // Convert Jekyll/Kramdown blocks to Mermaid-compatible format
+                document.querySelectorAll('code.language-mermaid').forEach((block) => {
+                    const pre = block.parentElement;
+                    const content = block.textContent;
+                    const div = document.createElement('div');
+                    div.className = 'mermaid';
+                    div.textContent = content;
+                    if (pre && pre.tagName === 'PRE') {
+                        pre.parentNode.replaceChild(div, pre);
+                    } else {
+                        block.parentNode.replaceChild(div, block);
+                    }
+                });
+                mermaid.init(undefined, '.mermaid');
+            });
+        </script>
+        
+        <script src="assets/js/sidebar.js"></script>
+
+        <!-- GitHub-style Alerts Transformer -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const blockquotes = document.querySelectorAll('blockquote');
+                blockquotes.forEach(bq => {
+                    const firstP = bq.querySelector('p');
+                    if (firstP && firstP.innerHTML.trim().startsWith('[!')) {
+                        const match = firstP.innerHTML.match(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i);
+                        if (match) {
+                            const type = match[1].toUpperCase();
+                            bq.classList.add('alert-box', `alert-box--${type.toLowerCase()}`);
+                            // Remove the trigger text [!TYPE]
+                            firstP.innerHTML = firstP.innerHTML.replace(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/i, '').trim();
+                            // Prepend a title/icon if desired
+                            const label = document.createElement('div');
+                            label.className = 'alert-box__label';
+                            label.innerHTML = `<strong>${type}</strong>`;
+                            bq.insertBefore(label, bq.firstChild);
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+
+    </html>

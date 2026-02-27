@@ -66,7 +66,7 @@ title: Home
         <p class="step-desc">Utilize the Virtual Research Environment for seamless analysis execution.</p>
         <div class="step-links">
             <a href="{{ base }}04_aquainfra_vre" class="step-link"> VRE in Handbook →</a>
-            <a href="https://aquainfra.dev.52north.org" target="_blank" class="step-link">AquaINFRA VRE →</a>
+            <a href="https://aqua.usegalaxy.eu/" target="_blank" class="step-link">AquaINFRA VRE →</a>
         </div>
     </div>
 </div>

@@ -7,6 +7,8 @@ This repository contains the source code for the reconstructed **AquaINFRA Train
 ## 📖 Live Handbook
 The handbook is **Zero-Config**. This means you can fork or upload this repository to any GitHub account, and it will work immediately without changing any code.
 
+Handbook is Accessible from this Link: [https://smatmir.github.io/AquaINFRA_Handbook/](https://smatmir.github.io/AquaINFRA_Handbook/)
+
 1. Find your link in the **Settings** > **Pages** section of your repository.
 2. Ensure you select the **`/docs`** folder as the deployment source.
 

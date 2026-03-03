@@ -19,7 +19,7 @@ title: Home
 <!-- STEP 1 -->
 
 <div class="path-step">
-    <div class="step-marker">1</div>
+    <div class="step-marker">EOSC</div>
     <div class="step-content">
         <h2 class="step-title">European Open Science Cloud (EOSC)</h2>
         <p class="step-desc">Understand how AquaINFRA integrates with the European Open Science Cloud infrastructure.</p>

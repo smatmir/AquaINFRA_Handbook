@@ -19,7 +19,6 @@ hero_title: Contact & Support
                 <h4>Prof. Carsten Keßler</h4>
                 <p><strong>Email:</strong> <a href="mailto:Carsten.Kessler@hs-bochum.de">Carsten.Kessler@hs-bochum.de</a></p>
             </div>
-            </div>
         </div>
     </div>
 </div>

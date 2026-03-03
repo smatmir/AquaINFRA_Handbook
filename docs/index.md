@@ -79,7 +79,7 @@ title: Home
         <h2 class="step-title">D2KP in Handbook</h2>
         <p class="step-desc">Converting raw environmental data into actionable knowledge indicators.</p>
         <div class="step-links">
-            <a href="{{ base }}05_data_to_knowledge" class="step-link"> Data to Knowledge →</a>
+            <a href="{{ base }}05_data_to_knowledge" class="step-link"> D2KP in Handbook →</a>
         </div>
     </div>
 </div>

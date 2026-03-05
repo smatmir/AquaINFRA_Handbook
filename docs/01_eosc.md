@@ -32,14 +32,16 @@ This is where EOSC comes in for AquaINFRA. We don't just use it for storage; we 
 
 ---
 
-## 🚀 Using the EOSC EU Node
+## 🚀 The EOSC EU Node: Your Starting Point
 
-If you want to tap into these European-scale computational resources, your starting line is the [EOSC EU Node](https://open-science-cloud.ec.europa.eu/). 
+While EOSC is the broad unifying concept, the [EOSC EU Node](https://open-science-cloud.ec.europa.eu/) is the actual, tangible platform where you can log in and start working. It is the first operational cloud environment built for this initiative, designed to get you up and running without dealing with complex IT setups.
 
-Instead of worrying about hardware or complex setups, the Node gives you a personal User Space where you can:
+So, why should an AquaINFRA researcher specifically use this Node?
 
-- **Launch Interactive Notebooks**: Use the Tools Hub to open pre-configured analysis environments right in your browser.
-- **Work Across Borders**: Create or join groups to collaborate with other aquatic researchers. This lets your team share datasets and pool cloud credits, smoothing out the technical bumps of international collaboration.
+Instead of worrying about hardware or securing funding for data centers, the Node gives you a personal User Space that solves immediate research bottlenecks:
+
+- **Instant Environmental Analysis**: Through the **Tools Hub**, you can instantly launch interactive oceanographic and freshwater notebooks. This means you get pre-configured environments ready to visualize and process AquaINFRA data directly in your browser.
+- **Cost-Free Cross-Border Collaboration**: By using **Groups**, you can invite researchers from different countries and institutions to work in the same workspace. Groups automatically pool your cloud credits, allowing your team to share massive aquatic datasets and run heavy computations without worrying about who is footing the infrastructure bill.
 
 > [!TIP]
 > **No New Passwords Needed**

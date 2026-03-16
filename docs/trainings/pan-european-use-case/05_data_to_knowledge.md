@@ -1,11 +1,19 @@
 ---
 layout: default
-title: 5. Data to Knowledge Package
+title: Data to Knowledge Package
 parent: Pan-European Biodiversity Use Case
 nav_order: 5
 ---
 
-# 5. Data to Knowledge (D2K) Package
+# Data to Knowledge (D2K) Package
+> [!NOTE] 📹 **Video Reference**
+> [11:11](https://www.youtube.com/watch?v=v_0zyUVY--E&t=671s) Review the Pan-European Data to Knowledge Package
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=671&end=792" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 To access the resources developed for this use case, navigate to the **AquaINFRA Interaction Platform** and search for "Data to Knowledge Package."
 
@@ -16,10 +24,10 @@ Select the package titled: **"Data to Knowledge Package for Specleaner: A toolki
 The D2K package is structured into five key sections:
 
 ### 1. Virtual Research Environment (Workflow)
-Clicking here provides detailed documentation and redirects you to **Galaxy** (the execution environment) or **Zenodo** (the data repository).
+Clicking here provides detailed documentation and redirects the user to **Galaxy** (the execution environment) or **Zenodo** (the data repository).
 
 ### 2. Virtual Lab (Binder)
-Redirects to a **MyBinder** environment where you can interact directly with the **R and Python code** and explore the underlying Docker image in your browser.
+Redirects to a **MyBinder** environment where the user can interact directly with the **R and Python code** and explore the underlying Docker image in the browser.
 
 ### 3. Web API (pygeoapi)
 Lists all API services linked to the workflow. The Pan-European processes are found under the identifier **"Boku"**.
@@ -29,11 +37,6 @@ Contains the complete toolbox, including scripts and tools hosted permanently on
 
 ### 5. Datasets
 Provides information and **direct download links** for the input datasets required (e.g., the GeoJSON area of interest).
-
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=671s" target="_blank">11:11</a> Review the Pan-European Data to Knowledge Package
-</div>
 
 <div class="sequence-navigation">
     <a href="./04_specleaner_package" class="btn-seq btn-seq--prev">← Previous: Specleaner</a>

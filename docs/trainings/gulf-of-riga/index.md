@@ -21,7 +21,7 @@ It is divided into chapters corresponding to the video sections.
 </div>
 
 <!-- Responsive Video Container -->
-<div class="video-wrapper">
+<div class="video-container">
     <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=2pTTlx4abrqQShr5" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -41,39 +41,39 @@ It is divided into chapters corresponding to the video sections.
         </thead>
         <tbody>
             <tr>
-                <td><a href="./01_introduction"><strong>1. Introduction</strong></a></td>
+                <td><a href="./01_introduction"><strong>Introduction</strong></a></td>
                 <td>Overview of the AquaINFRA project and goals.</td>
             </tr>
             <tr>
-                <td><a href="./02_case_study"><strong>2. Case Study Story</strong></a></td>
+                <td><a href="./02_case_study"><strong>Case Study Story</strong></a></td>
                 <td>The "water darkening" hypothesis and research question.</td>
             </tr>
             <tr>
-                <td><a href="./03_aip_platform"><strong>3. Interaction Platform</strong></a></td>
+                <td><a href="./03_aip_platform"><strong>Interaction Platform</strong></a></td>
                 <td>How to use the AIP to find data and resources.</td>
             </tr>
             <tr>
-                <td><a href="./04_d2k_package"><strong>4. Data-to-Knowledge Package</strong></a></td>
+                <td><a href="./04_d2k_package"><strong>Data-to-Knowledge Package</strong></a></td>
                 <td>Introduction to the D2K package concept.</td>
             </tr>
             <tr>
-                <td><a href="./05_vre_galaxy"><strong>5. Aqua Galaxy (VRE)</strong></a></td>
+                <td><a href="./05_vre_galaxy"><strong>Aqua Galaxy (VRE)</strong></a></td>
                 <td>Introduction to the Virtual Research Environment.</td>
             </tr>
             <tr>
-                <td><a href="./06_workflow_concept"><strong>6. Workflow Concept</strong></a></td>
+                <td><a href="./06_workflow_concept"><strong>Workflow Concept</strong></a></td>
                 <td>Conceptual overview of the Gulf of Riga workflow.</td>
             </tr>
             <tr>
-                <td><a href="./07_hands_on_tutorial"><strong>7. Hands-On Tutorial</strong></a></td>
+                <td><a href="./07_hands_on_tutorial"><strong>Hands-On Tutorial</strong></a></td>
                 <td>Step-by-step guide to importing data and running the workflow.</td>
             </tr>
             <tr>
-                <td><a href="./08_workflow_details"><strong>8. Workflow Details</strong></a></td>
+                <td><a href="./08_workflow_details"><strong>Workflow Details</strong></a></td>
                 <td>Technical breakdown of the DGA workflow components.</td>
             </tr>
             <tr>
-                <td><a href="./09_results"><strong>9. Results & Conclusion</strong></a></td>
+                <td><a href="./09_results"><strong>Results & Conclusion</strong></a></td>
                 <td>Findings of the trend analysis and future outlook.</td>
             </tr>
         </tbody>

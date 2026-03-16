@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>6. Galaxy Workflow Setup | AquaINFRA Handbook</title>
+    <title>Galaxy Workflow Setup | AquaINFRA Handbook</title>
 
     <!-- Design System CSS -->
     <link rel="stylesheet" href="../.././assets/css/style.css">
@@ -134,7 +134,7 @@
                     
                     <li>
                         <a href="../.././wp6_tasks" class="sidebar__link">
-                            Elbe
+                            Elbe River
                         </a>
                     </li>
                     
@@ -199,7 +199,7 @@
 
             <!-- Page Content -->
             <div class="handbook-content">
-                <h1 id="6-galaxy-workflow-setup">6. Galaxy Workflow Setup</h1>
+                <h1 id="galaxy-workflow-setup">Galaxy Workflow Setup</h1>
 
 <p>Before you can run the outlier detection, you must import the workflow and its required data into <strong><a href="https://aqua.usegalaxy.eu/">Aqua Galaxy</a></strong>.</p>
 
@@ -221,18 +221,24 @@
 
 <h2 id="execution-status">Execution Status</h2>
 <p>As the workflow runs, the status boxes in the history panel will change color:</p>
-<ul>
-  <li><span style="color: #FFA500; font-weight: bold;">Orange</span>: The process is currently running.</li>
-  <li><span style="color: #008000; font-weight: bold;">Green</span>: The step has successfully completed.</li>
-  <li><span style="color: #FF0000; font-weight: bold;">Red</span>: The step has failed.</li>
-</ul>
+<blockquote>
+  <p>[!WARNING] <strong>Orange</strong>: The process is currently running.</p>
+</blockquote>
+
+<blockquote>
+  <p>[!TIP] <strong>Green</strong>: The step has successfully completed.</p>
+</blockquote>
+
+<blockquote>
+  <p>[!CAUTION] <strong>Red</strong>: The step has failed.</p>
+</blockquote>
 
 <p>Once imported, you can click <strong>Run</strong> on the workflow, select your input dataset, and wait for all steps to turn green.</p>
 
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&amp;t=792s" target="_blank">13:12</a> Running the Workflow
-</div>
+<blockquote>
+  <p>[!NOTE] 📹 <strong>Video Reference</strong>
+<a href="https://www.youtube.com/watch?v=v_0zyUVY--E&amp;t=792s">13:12</a> Running the Workflow</p>
+</blockquote>
 
 <div class="sequence-navigation">
     <a href="./05_data_to_knowledge" class="btn-seq btn-seq--prev">← Previous: D2K Package</a>

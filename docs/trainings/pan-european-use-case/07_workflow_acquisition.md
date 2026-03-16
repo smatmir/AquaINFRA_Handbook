@@ -1,37 +1,31 @@
 ---
 layout: default
-title: 7. Workflow Structure (Part 1)
+title: Workflow Structure (Part 1)
 parent: Pan-European Biodiversity Use Case
 nav_order: 7
 ---
 
-# 7. Workflow Structure (Part 1)
+# Workflow Structure (Part 1)
+> [!NOTE] 📹 **Video Reference**
+> [15:41](https://www.youtube.com/watch?v=v_0zyUVY--E&t=941s) Review the Workflow Structure Part 1
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=941&end=1000" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 The workflow consists of **8 interconnected steps** categorized into two phases. The first phase (Steps 1-4) focuses on defining the study area and acquiring biodiversity data.
 
 ## Phase 1: Data Acquisition
 
-### Step 1: Input Data (Area of Interest)
-*   **Goal**: Define the geographical boundaries of your study.
-*   **Formats**: Supports **GeoJSON** and **Shapefiles**.
-*   **Action**: Highlights the area on the map where biodiversity records will be analyzed.
+| Step | Goal | Action |
+| :--- | :--- | :--- |
+| **Step 1: Input Data (Area of Interest)** | Define the geographical boundaries of the study. | Highlights the area on the map where biodiversity records will be analysed. |
+| **Step 2: Retrieve Biodiversity Data** | Fetch global occurrence records directly into Galaxy. | Connects to VertNet, GBIF, and iNaturalist. Retrieves up to a maximum number of points for defined target species. |
+| **Steps 3 & 4: Offline/Local Data** | Incorporate the own locally stored datasets. | Handles tabular files uploaded directly to Galaxy. Used to complement online data or as the sole source. |
 
-### Step 2: Retrieve Biodiversity Data (Online)
-*   **Goal**: Fetch global occurrence records directly into Galaxy.
-*   **Providers**: Connects to **VertNet**, **GBIF**, and **iNaturalist**.
-*   **Parameters**:
-    *   **Species Names**: Specify the target species.
-    *   **Max Points**: Set a limit on the number of points to retrieve (to manage processing time).
-
-### Steps 3 & 4: Offline/Local Data
-*   **Goal**: Incorporate your own locally stored datasets.
-*   **Action**: These steps handle tabular files uploaded directly to Galaxy. They can be used to complement online data or as the sole source of records.
-*   *Note*: If you don't have local data, these steps can be skipped in a custom run.
-
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=941s" target="_blank">15:41</a> Review the Workflow Structure Part 1
-</div>
+*Note: If the user don't have local data, Steps 3 & 4 can be skipped in a custom run.*
 
 <div class="sequence-navigation">
     <a href="./06_galaxy_workflow_setup" class="btn-seq btn-seq--prev">← Previous: Galaxy Setup</a>

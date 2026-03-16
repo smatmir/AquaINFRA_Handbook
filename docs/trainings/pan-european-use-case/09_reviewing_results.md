@@ -1,13 +1,21 @@
 ---
 layout: default
-title: 9. Reviewing the Results
+title: Reviewing the Results
 parent: Pan-European Biodiversity Use Case
 nav_order: 9
 ---
 
-# 9. Reviewing the Workflow Results
+# Reviewing the Workflow Results
+> [!NOTE] 📹 **Video Reference**
+> [18:42](https://www.youtube.com/watch?v=v_0zyUVY--E&t=1122s) Review the Workflow Results
 
-Once all steps in your Galaxy history have turned **green**, your results are ready for exploration and analysis.
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v_0zyUVY--E?si=H17k0E02LnCIW7Mp&start=1122&end=1182" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+
+Once all steps in the Galaxy history have turned **green**, the results are ready for exploration and analysis.
 
 ## Visualizing Output in Galaxy
 To view the results of any step (especially Step 8: Flag Outliers):
@@ -17,22 +25,21 @@ To view the results of any step (especially Step 8: Flag Outliers):
 
 ## Accessing the Result Files
 Each workflow step produces a text file containing a direct link to the actual results. In this use case, the results are provided in **CSV format**.
-*   You can follow the link to download the final CSV file for use in your own local R or Python environments.
+*   users can follow the link to download the final CSV file for use in the own local R or Python environments.
 
 ## Interpreting Outlier Classifications
 The final output includes all extracted environmental predictors and a classification for each record based on the strength of evidence provided by the ensemble methods:
-*   **Poor Outlier**
-*   **Moderate Outlier**
-*   **Fair Outlier**
-*   **Very Strong Outlier**
+> [!TIP] **Minor Outliers**
+> - Poor Outlier
+> - Moderate Outlier
+> - Fair Outlier
+
+> [!WARNING] **Major Outliers**
+> - Very Strong Outlier
+> - Perfect Outlier
 *   **Not an Outlier**
 
 Researchers can use these flags to create a more robust "cleaned" dataset for their final Species Distribution Models.
-
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&t=1122s" target="_blank">18:42</a> Review the Workflow Results
-</div>
 
 <div class="sequence-navigation">
     <a href="./08_workflow_processing" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 2</a>

@@ -1,9 +1,17 @@
 ---
 layout: default
-title: 1. Introduction
+title: Introduction
 ---
 
 # Introduction to AquaINFRA
+> [!NOTE] 📹 **Video Reference**
+> [0:00](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=0s) Introduction to AquaINFRA
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=0&end=118" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 ## Project Overview
 The **AquaINFRA project** aims to develop a virtual environment equipped with FAIR (Findable, Accessible, Interoperable, and Reusable) multidisciplinary data and services. 
@@ -14,16 +22,11 @@ Its primary goal is to support marine and freshwater scientists and stakeholders
 ## Capabilities
 The AquaINFRA virtual environment enables target stakeholders to:
 *   **Store, share, and access** research data.
-*   **Analyze and process** research digital objects.
+*   **Analyse and process** research digital objects.
 *   **Collaborate** across disciplines (marine & freshwater) and national borders.
 *   Leverage the **European Open Science Cloud (EOSC)** and existing operational data spaces.
 
 ---
-
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=0s" target="_blank">0:00</a> Introduction to AquaINFRA
-</div>
 
 <div class="sequence-navigation">
     <a href="./" class="btn-seq btn-seq--prev">← Overview</a>

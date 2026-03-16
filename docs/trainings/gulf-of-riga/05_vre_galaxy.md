@@ -1,15 +1,23 @@
 ---
 layout: default
-title: 5. Aqua Galaxy (VRE)
+title: Aqua Galaxy (VRE)
 ---
 
 # Virtual Research Environment: Aqua Galaxy
+> [!NOTE] 📹 **Video Reference**
+> [9:32](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=572s) Introduction to the Virtual Research Environment (VRE) and the Gulf of Riga Workflow
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=572&end=671" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 The **Aqua Galaxy** is the dedicated Virtual Research Environment (VRE) for the AquaINFRA project.
 
 ## Platform Technicals
 *   **Base**: It is a subdomain of the popular **[Galaxy platform](https://aqua.usegalaxy.eu/)**, an open-source, web-based platform for data intensive biomedical research which has been adapted here for aquatic sciences.
-*   **Purpose**: To allow researchers to store, analyze, and process multidisciplinary FAIR data without needing complex local computing setups.
+*   **Purpose**: To allow researchers to store, analyse, and process multidisciplinary FAIR data without needing complex local computing setups.
 
 ## Key Features
 *   **Tool Repository**: Contains a set of specialized tools for marine and freshwater analysis.
@@ -17,11 +25,6 @@ The **Aqua Galaxy** is the dedicated Virtual Research Environment (VRE) for the 
 *   **Reproducibility**: Experiments managed in Galaxy are inherently reproducible, recording every step, tool version, and parameter used.
 
 ---
-
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=572s" target="_blank">9:32</a> Introduction to the Virtual Research Environment (VRE) and the Gulf of Riga Workflow
-</div>
 
 <div class="sequence-navigation">
     <a href="./04_d2k_package" class="btn-seq btn-seq--prev">← Previous: D2K Package</a>

@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8. Workflow Structure (Part 2) | AquaINFRA Handbook</title>
+    <title>Workflow Structure (Part 2) | AquaINFRA Handbook</title>
 
     <!-- Design System CSS -->
     <link rel="stylesheet" href="../.././assets/css/style.css">
@@ -134,7 +134,7 @@
                     
                     <li>
                         <a href="../.././wp6_tasks" class="sidebar__link">
-                            Elbe
+                            Elbe River
                         </a>
                     </li>
                     
@@ -199,56 +199,48 @@
 
             <!-- Page Content -->
             <div class="handbook-content">
-                <h1 id="8-workflow-structure-part-2">8. Workflow Structure (Part 2)</h1>
+                <h1 id="workflow-structure-part-2">Workflow Structure (Part 2)</h1>
 
 <p>The second phase of the workflow (Steps 5-8) handles the cleaning, harmonization, and the core outlier detection logic powered by Specleaner.</p>
 
 <h2 id="phase-2-processing--detection">Phase 2: Processing &amp; Detection</h2>
 
-<h3 id="step-5-merge--harmonize-columns">Step 5: Merge &amp; Harmonize Columns</h3>
-<ul>
-  <li><strong>Goal</strong>: Combine online and offline data into a unified structure.</li>
-  <li><strong>Action</strong>: Maps divergent column names to a standard set:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">Species</code></li>
-      <li><code class="language-plaintext highlighter-rouge">Decimal Latitude</code></li>
-      <li><code class="language-plaintext highlighter-rouge">Decimal Longitude</code></li>
-      <li><code class="language-plaintext highlighter-rouge">Date</code></li>
-      <li><code class="language-plaintext highlighter-rouge">Country</code></li>
-    </ul>
-  </li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Step</th>
+      <th style="text-align: left">Goal</th>
+      <th style="text-align: left">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Step 5: Merge &amp; Harmonize Columns</strong></td>
+      <td style="text-align: left">Combine online and offline data into a unified structure.</td>
+      <td style="text-align: left">Maps divergent column names to a standard set: <code class="language-plaintext highlighter-rouge">Species</code>, <code class="language-plaintext highlighter-rouge">Decimal Latitude</code>, <code class="language-plaintext highlighter-rouge">Decimal Longitude</code>, <code class="language-plaintext highlighter-rouge">Date</code>, <code class="language-plaintext highlighter-rouge">Country</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Step 6: Harmonize Species Names</strong></td>
+      <td style="text-align: left">Ensure taxonomic consistency.</td>
+      <td style="text-align: left">Connects to FishBase. Resolves scientific synonyms and ensures all records use the currently accepted scientific name.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Step 7: Extract Environmental Predictors</strong></td>
+      <td style="text-align: left">Add environmental context to each occurrence point.</td>
+      <td style="text-align: left">Uses WorldClim raster files. For every coordinate pair, it extracts environmental values (e.g., Mean Annual Temperature).</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Step 8: Flag Outliers (The Core)</strong></td>
+      <td style="text-align: left">Apply Specleaner algorithms.</td>
+      <td style="text-align: left">Tests a chosen variable (e.g., Temp) against selected univariate and multivariate methods. Flagged by outlier strength (Poor, Fair, Strong, Perfect).</td>
+    </tr>
+  </tbody>
+</table>
 
-<h3 id="step-6-harmonize-species-names">Step 6: Harmonize Species Names</h3>
-<ul>
-  <li><strong>Goal</strong>: Ensure taxonomic consistency.</li>
-  <li><strong>Backbone</strong>: Connects to <strong>FishBase</strong>.</li>
-  <li><strong>Action</strong>: Resolves scientific synonyms and ensures all records use the currently accepted научное название.</li>
-</ul>
-
-<h3 id="step-7-extract-environmental-predictors">Step 7: Extract Environmental Predictors</h3>
-<ul>
-  <li><strong>Goal</strong>: Add environmental context to each occurrence point.</li>
-  <li><strong>Backbone</strong>: Uses <strong>WorldClim</strong> raster files.</li>
-  <li><strong>Action</strong>: For every coordinate pairs, it extracts environmental values (e.g., Mean Annual Temperature) from the raster, creating the “Reference Dataset.”</li>
-</ul>
-
-<h3 id="step-8-flag-outliers-the-core">Step 8: Flag Outliers (The Core)</h3>
-<ul>
-  <li><strong>Goal</strong>: Apply Specleaner algorithms.</li>
-  <li><strong>Parameters</strong>:
-    <ul>
-      <li><strong>Variable of Interest</strong>: Select which environmental variable to test (e.g., Temp).</li>
-      <li><strong>Detection Methods</strong>: Choose from the univariate and multivariate methods discussed in <a href="04_specleaner_package.html">Chapter 4</a>.</li>
-    </ul>
-  </li>
-  <li><strong>Result</strong>: Records are flagged by their outlier strength (Poor, Fair, Strong, Perfect).</li>
-</ul>
-
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&amp;t=1000s" target="_blank">16:40</a> Review the Workflow Structure Part 2
-</div>
+<blockquote>
+  <p>[!NOTE] 📹 <strong>Video Reference</strong>
+<a href="https://www.youtube.com/watch?v=v_0zyUVY--E&amp;t=1000s">16:40</a> Review the Workflow Structure Part 2</p>
+</blockquote>
 
 <div class="sequence-navigation">
     <a href="./07_workflow_acquisition" class="btn-seq btn-seq--prev">← Previous: Workflow Pt. 1</a>

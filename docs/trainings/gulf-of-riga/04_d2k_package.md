@@ -1,9 +1,17 @@
 ---
 layout: default
-title: 4. Data-to-Knowledge Package
+title: Data-to-Knowledge Package
 ---
 
 # Data-to-Knowledge Package
+> [!NOTE] 📹 **Video Reference**
+> [6:51](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=411s) Introduction to the Data to Knowledge Package
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=411&end=572" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 The **Data-to-Knowledge Package (D2K)** is a core concept in AquaINFRA. It links data and computational code to support reproducible spatiotemporal trend detection analysis.
 
@@ -11,7 +19,7 @@ The **Data-to-Knowledge Package (D2K)** is a core concept in AquaINFRA. It links
 A D2K package is specifically designed to structure and integrate meta-objects, providing a framework for addressing specific research questions—in this case: *"Do the optical properties in the Gulf of Riga change over the long term?"*
 
 ## Contents of the Package
-Within the package, you will find:
+Within the package, the user will find:
 *   **Step-by-step Guide**: Instructions on how to run the workflow.
 *   **Virtual Lab**: Links to a MyBinder-based virtual lab.
 *   **Web API Services**: Detailed info on developed services.
@@ -28,11 +36,6 @@ The package includes a toolbox of predefined functions for:
 This acts as the computational backbone, supporting long-term trend identification.
 
 ---
-
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=411s" target="_blank">6:51</a> Introduction to the Data to Knowledge Package
-</div>
 
 <div class="sequence-navigation">
     <a href="./03_aip_platform" class="btn-seq btn-seq--prev">← Previous: AIP Platform</a>

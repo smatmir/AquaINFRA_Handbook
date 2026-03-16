@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7. Workflow Structure (Part 1) | AquaINFRA Handbook</title>
+    <title>Workflow Structure (Part 1) | AquaINFRA Handbook</title>
 
     <!-- Design System CSS -->
     <link rel="stylesheet" href="../.././assets/css/style.css">
@@ -134,7 +134,7 @@
                     
                     <li>
                         <a href="../.././wp6_tasks" class="sidebar__link">
-                            Elbe
+                            Elbe River
                         </a>
                     </li>
                     
@@ -199,42 +199,45 @@
 
             <!-- Page Content -->
             <div class="handbook-content">
-                <h1 id="7-workflow-structure-part-1">7. Workflow Structure (Part 1)</h1>
+                <h1 id="workflow-structure-part-1">Workflow Structure (Part 1)</h1>
 
 <p>The workflow consists of <strong>8 interconnected steps</strong> categorized into two phases. The first phase (Steps 1-4) focuses on defining the study area and acquiring biodiversity data.</p>
 
 <h2 id="phase-1-data-acquisition">Phase 1: Data Acquisition</h2>
 
-<h3 id="step-1-input-data-area-of-interest">Step 1: Input Data (Area of Interest)</h3>
-<ul>
-  <li><strong>Goal</strong>: Define the geographical boundaries of your study.</li>
-  <li><strong>Formats</strong>: Supports <strong>GeoJSON</strong> and <strong>Shapefiles</strong>.</li>
-  <li><strong>Action</strong>: Highlights the area on the map where biodiversity records will be analyzed.</li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Step</th>
+      <th style="text-align: left">Goal</th>
+      <th style="text-align: left">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Step 1: Input Data (Area of Interest)</strong></td>
+      <td style="text-align: left">Define the geographical boundaries of your study.</td>
+      <td style="text-align: left">Highlights the area on the map where biodiversity records will be analyzed.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Step 2: Retrieve Biodiversity Data</strong></td>
+      <td style="text-align: left">Fetch global occurrence records directly into Galaxy.</td>
+      <td style="text-align: left">Connects to VertNet, GBIF, and iNaturalist. Retrieves up to a maximum number of points for defined target species.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Steps 3 &amp; 4: Offline/Local Data</strong></td>
+      <td style="text-align: left">Incorporate your own locally stored datasets.</td>
+      <td style="text-align: left">Handles tabular files uploaded directly to Galaxy. Used to complement online data or as the sole source.</td>
+    </tr>
+  </tbody>
+</table>
 
-<h3 id="step-2-retrieve-biodiversity-data-online">Step 2: Retrieve Biodiversity Data (Online)</h3>
-<ul>
-  <li><strong>Goal</strong>: Fetch global occurrence records directly into Galaxy.</li>
-  <li><strong>Providers</strong>: Connects to <strong>VertNet</strong>, <strong>GBIF</strong>, and <strong>iNaturalist</strong>.</li>
-  <li><strong>Parameters</strong>:
-    <ul>
-      <li><strong>Species Names</strong>: Specify the target species.</li>
-      <li><strong>Max Points</strong>: Set a limit on the number of points to retrieve (to manage processing time).</li>
-    </ul>
-  </li>
-</ul>
+<p><em>Note: If you don’t have local data, Steps 3 &amp; 4 can be skipped in a custom run.</em></p>
 
-<h3 id="steps-3--4-offlinelocal-data">Steps 3 &amp; 4: Offline/Local Data</h3>
-<ul>
-  <li><strong>Goal</strong>: Incorporate your own locally stored datasets.</li>
-  <li><strong>Action</strong>: These steps handle tabular files uploaded directly to Galaxy. They can be used to complement online data or as the sole source of records.</li>
-  <li><em>Note</em>: If you don’t have local data, these steps can be skipped in a custom run.</li>
-</ul>
-
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&amp;t=941s" target="_blank">15:41</a> Review the Workflow Structure Part 1
-</div>
+<blockquote>
+  <p>[!NOTE] 📹 <strong>Video Reference</strong>
+<a href="https://www.youtube.com/watch?v=v_0zyUVY--E&amp;t=941s">15:41</a> Review the Workflow Structure Part 1</p>
+</blockquote>
 
 <div class="sequence-navigation">
     <a href="./06_galaxy_workflow_setup" class="btn-seq btn-seq--prev">← Previous: Galaxy Setup</a>

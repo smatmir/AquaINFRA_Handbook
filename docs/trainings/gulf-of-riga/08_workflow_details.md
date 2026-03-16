@@ -1,13 +1,21 @@
 ---
 layout: default
-title: 8. Workflow Details
+title: Workflow Details
 ---
 
 # The Gulf of Riga DGA Workflow
+> [!NOTE] 📹 **Video Reference**
+> [21:29](https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s) Detailed Review of the Workflow Components
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/lfGLnLyqaIs?si=bRfKveHeRXwV9vQR&start=1289&end=1507" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 
 This chapter details the specific "Data Gathering and Analysis" (DGA) workflow used in the case study. The workflow integrates **eight distinct tools** into a pipeline.
 
-## 1. Input Data
+## Input Data
 The workflow starts with two datasets:
 
 ```mermaid
@@ -23,7 +31,7 @@ graph LR
 1.  **Point Data**: In-situ measurements of Secchi depth (water transparency).
 2.  **Polygon Data**: Assessment unit polygons defining the spatial boundaries of the regions being studied.
 
-## 2. Pre-Processing
+## Pre-Processing
 
 ### Spatial Aggregation
 *   **Goal**: Assign scattered data points to specific administrative or geographical units.
@@ -33,7 +41,7 @@ graph LR
 *   **Goal**: Account for seasonality (crucial in the Gulf of Riga).
 *   **Process**: Based on the visit date, each point is assigned a **Season** (e.g., Spring, Summer).
 
-## 3. Data Analysis Steps
+## Data Analysis Steps
 
 ### Calculate Mean Values (Group 1)
 Calculates the average transparency for granular groups defined by:
@@ -61,17 +69,12 @@ The final analytical step.
 *   **Method**: A **Mann-Kendall test** (non-parametric statistical test) is applied.
 *   **Purpose**: To detect if there is a monotonic upward or downward trend in the Secchi depth variable over time.
 
-## 4. Visualization
+## Visualization
 The workflow automatically generates:
 1.  **Interactive Map**: Showing the assessment units.
 2.  **Bar Chart**: Displaying **Kendall's Tau** values. A negative Tau indicates a decreasing trend (darkening), while positive indicates clearing.
 
 ---
-
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=lfGLnLyqaIs&t=1289s" target="_blank">21:29</a> Detailed Review of the Workflow Components
-</div>
 
 <div class="sequence-navigation">
     <a href="./07_hands_on_tutorial" class="btn-seq btn-seq--prev">← Previous: Hands-On Tutorial</a>

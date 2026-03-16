@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4. Specleaner R Package | AquaINFRA Handbook</title>
+    <title>Specleaner R Package | AquaINFRA Handbook</title>
 
     <!-- Design System CSS -->
     <link rel="stylesheet" href="../.././assets/css/style.css">
@@ -134,7 +134,7 @@
                     
                     <li>
                         <a href="../.././wp6_tasks" class="sidebar__link">
-                            Elbe
+                            Elbe River
                         </a>
                     </li>
                     
@@ -199,7 +199,7 @@
 
             <!-- Page Content -->
             <div class="handbook-content">
-                <h1 id="4-specleaner-r-package">4. Specleaner R Package</h1>
+                <h1 id="specleaner-r-package">Specleaner R Package</h1>
 
 <p>The technical foundation of the Pan-European workflow is the <strong>Specleaner</strong> R package. It provides a homogeneous and robust approach for identifying outliers in species occurrence records.</p>
 
@@ -210,18 +210,51 @@
 
 <h3 id="univariate-methods">Univariate Methods</h3>
 <p>These require a <strong>single environmental predictor</strong> (e.g., Temperature).</p>
-<ul>
-  <li><strong>Z-score</strong>: Flags records that deviate significantly from the mean.</li>
-  <li><strong>Interquartile Range (IQR)</strong>: Flags records outside the statistical “whiskers.”</li>
-  <li><strong>Ecological Ranges</strong>: Checks if records exceed known suitable ecological ranges for the species.</li>
-</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Method</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Z-score</strong></td>
+      <td style="text-align: left">Flags records that deviate significantly from the mean.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Interquartile Range (IQR)</strong></td>
+      <td style="text-align: left">Flags records outside the statistical “whiskers.”</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Ecological Ranges</strong></td>
+      <td style="text-align: left">Checks if records exceed known suitable ecological ranges for the species.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="multivariate-methods">Multivariate Methods</h3>
 <p>These check for outliers in <strong>multi-dimensional space</strong>, considering multiple predictors simultaneously.</p>
-<ul>
-  <li><strong>Isolation Forest</strong>: Isolates anomalies by randomly partitioning data.</li>
-  <li><strong>One-Class Support Vector Machines (SVM)</strong>: Learns the boundary of “normal” points and flags those outside.</li>
-</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Method</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Isolation Forest</strong></td>
+      <td style="text-align: left">Isolates anomalies by randomly partitioning data.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>One-Class Support Vector Machines (SVM)</strong></td>
+      <td style="text-align: left">Learns the boundary of “normal” points and flags those outside.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="2-weighting--voting-system">2. Weighting &amp; Voting System</h2>
 <p>Specleaner doesn’t just say “Outlier” or “Not Outlier.” It uses the function <code class="language-plaintext highlighter-rouge">m_detect</code> to compile results and <strong>weight</strong> each record:</p>
@@ -233,10 +266,10 @@
 
 <p>Researchers can then use thresholds (e.g., Poor, Fair, Moderate, Strong, Perfect) to filter data or apply expert knowledge to decide which records have an “ecological consequence” and should be removed.</p>
 
-<div class="callout">
-    <strong>📹 Video Reference</strong>
-    <a href="https://www.youtube.com/watch?v=v_0zyUVY--E&amp;t=380s" target="_blank">6:20</a> Review the Specleaner R Package
-</div>
+<blockquote>
+  <p>[!NOTE] 📹 <strong>Video Reference</strong>
+<a href="https://www.youtube.com/watch?v=v_0zyUVY--E&amp;t=380s">6:20</a> Review the Specleaner R Package</p>
+</blockquote>
 
 <div class="sequence-navigation">
     <a href="./03_biodiversity_importance" class="btn-seq btn-seq--prev">← Previous: Biodiversity</a>

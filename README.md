@@ -38,7 +38,7 @@ The handbook covers the full research lifecycle within the project:
 The AquaINFRA Training Handbook are developed and maintained at **[Hochschule Bochum](https://www.hochschule-bochum.de/fbg/team-und-labore/kessler/)** within the AquaINFRA project team.
 
 - **[Prof. Dr. Carsten Keßler](https://github.com/crstn)** — Team Lead
-- **[Sadra Matmir](https://github.com/smatmir)** — Project Supervisor, Training Concept Designer & Developer.
+- **[Sadra Matmir](https://github.com/smatmir)** — Training Concept Designer & Developer.
 - **[Mehrad Moradipour](https://github.com/Mehrad1994)** — Developer.
 
 ---

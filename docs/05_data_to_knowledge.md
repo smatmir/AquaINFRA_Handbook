@@ -33,10 +33,6 @@ A D2KP is not just a zip file of PDFs. It is a fully functional toolkit designed
 
 ## 🔍 Finding and Using D2KPs
 
-> [!TIP]
-> **D2KP Publication**
-> All official AquaINFRA workflows are released as **Data-to-Knowledge Packages (D2KP)** to provide citable records (DOIs). You can find these packages directly via the **[AIP Search Interface](https://aquainfra.dev.52north.org/)** by filtering for "Data to Knowledge Package".
-
 > [!NOTE]
 > **Interconnectivity**
 > When you find a dataset on the AIP, look for the "Related Content" section on the right side. This will indicate if an associated D2KP exists, showing you exactly how that data was used in previous research.

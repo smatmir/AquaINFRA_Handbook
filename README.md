@@ -2,16 +2,23 @@
 
 ![AquaINFRA](https://img.shields.io/badge/Project-AquaINFRA-blue) ![Status](https://img.shields.io/badge/Status-Active-success) ![Jekyll](https://img.shields.io/badge/Built%20with-Jekyll-orange)
 
-This repository contains the source code for the reconstructed **AquaINFRA Training Handbooks**. The site is designed as a sequential learning path to guide researchers from project overview to technical implementation.
+This repository provides the high-performance, mobile-responsive source code for the **AquaINFRA Training Handbook**. It is designed as a guided portal for researchers navigating the AquaINFRA ecosystem.
 
-## 📖 Live Handbook
-The handbook is **Zero-Config**. This means you can fork or upload this repository to any GitHub account, and it will work immediately without changing any code.
+## 🌐 Live Handbook
+Access the interactive training modules here:  
+**[mehrad1994.github.io/AquaINFRA_Training_Handbooks](https://mehrad1994.github.io/AquaINFRA_Training_Handbooks/)**
 
-Handbook is Accessible from this Link:
-[https://smatmir.github.io/AquaINFRA_Handbook/](https://smatmir.github.io/AquaINFRA_Handbook/)
+## 📖 Project Scope
+The handbook covers the full research lifecycle within the project:
+1.  **Foundations**: EOSC integration and the AquaINFRA mission.
+2.  **Environments**: Exploration of AIP (Interaction Platform) and VRE (Virtual Research Environment).
+3.  **Packages**: D2KP (Data-to-Knowledge) implementation.
+4.  **Training Library**: Practical, video-driven use cases and technical training modules.
 
-1. Find your link in the **Settings** > **Pages** section of your repository.
-2. Ensure you select the **`/docs`** folder as the deployment source.
+## 🚀 Key Features
+- **Zero-Config Portability**: Fork and deploy to GitHub Pages instantly without editing code.
+- **Guided Navigation**: A sequential UI optimized for learning retention and progression.
+- **Premium Design System**: Lightweight Vanilla CSS providing a premium look on all devices.
 
 ## 🛤️ The Complete Learning Path
 1.  **EOSC**: Understanding how AquaINFRA integrates with the European Open Science Cloud.
@@ -22,16 +29,16 @@ Handbook is Accessible from this Link:
 6.  **Use Case Library**: Technical training modules with video tutorials and reproducible code.
 7.  **Contact**: Project support and contact information.
 
-## 🛠️ Developer & Contributor Resources
-- 🏗️ **[Architecture Guide](ARCHITECTURE.md)**: Overview of the codebase.
-- ✍️ **[Contributor Guide](CONTRIBUTING.md)**: Instructions for adding new trainings.
-- 📦 **[Training Template](docs/trainings/_TEMPLATE/)**: The starter-kit for new pages.
+## 🗺️ Documentation
+- 🏗️ **[Architecture](ARCHITECTURE.md)**: Logic and system design overview.
+- ✍️ **[Contributing](CONTRIBUTING.md)**: Workflow for adding new training content.
 
-## ✅ Project Features
-- **Sequential Navigation**: Built-in "Next/Previous" flow for a guided user experience.
-- **Premium Design System**: Decoupled CSS (`sidebar.css`, `theme.css`, `style.css`) for consistent, mobile-optimized branding.
-- **Merge-Ready Architecture**: Decoupled content pages from logic for easy contribution.
-- **Open Data Integration**: Direct links to D2KP (Zenodo), GitHub, and YouTube for every training.
+## 👥 Core Team & Leadership
+The AquaINFRA Training Handbook are developed and maintained at **[Hochschule Bochum](https://www.hochschule-bochum.de/fbg/team-und-labore/kessler/)** within the AquaINFRA project team.
+
+- **[Prof. Dr. Carsten Keßler](https://github.com/crstn)** — Team Lead & Principal Investigator.
+- **[Sadra Matmir](https://github.com/smatmir)** — Project Supervisor & Developer.
+- **[Mehrad Moradipour](https://github.com/Mehrad1994)** — Developer.
 
 ---
 *For official project news and research goals, visit [aquainfra.eu](https://aquainfra.eu).*

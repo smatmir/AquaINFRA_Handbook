@@ -34,7 +34,7 @@ The handbook covers the full research lifecycle within the project:
 - 🏗️ **[Architecture](ARCHITECTURE.md)**: Logic and system design overview.
 - ✍️ **[Contributing](CONTRIBUTING.md)**: Workflow for adding new training content.
 
-## 👥 DESIGN AND DEVELOPMENT TEAM
+## 👥 Design & Development Team
 The AquaINFRA Training Handbook are developed and maintained at **[Hochschule Bochum](https://www.hochschule-bochum.de/fbg/team-und-labore/kessler/)** within the AquaINFRA project team.
 
 - **[Prof. Dr. Carsten Keßler](https://github.com/crstn)** — Team Lead

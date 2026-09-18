@@ -1,0 +1,28 @@
+---
+layout: chapter
+nav_order: 3
+parent: "Service by the Gulf of Riga"
+title: The Interaction Platform & D2K Packages
+---
+
+# The Interaction Platform & D2K Packages
+
+<p class="chapter-meta">Chapter 3 of 7</p>
+
+<div class="chapter-intro">
+    <p>The <a href="../../reference/glossary#aip" target="_blank" rel="noopener">AquaINFRA Interaction Platform</a> serves as the central gateway to find datasets and workflows. This chapter explains how to use the search functionality to locate the specific <a href="../../reference/glossary#d2kp" target="_blank" rel="noopener">Data-to-Knowledge Package</a> for the Gulf of Riga, which bundles the workflow, the Binder virtual lab, and the web API services required to address the research question.</p>
+</div>
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/qAn06RXmgCM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+## How a D2KP fits together
+
+<div class="diagram">
+    <a href="../../assets/images/d2kp-fair-architecture.jpg" target="_blank" rel="noopener">
+        <img src="../../assets/images/d2kp-fair-architecture.jpg" alt="How the FAIR principles flow into a Data-to-Knowledge Package and its components - Virtual Research Environment, Workflow, Reproducible Basis Toolbox, Web API, and Dataset - and how these connect the AquaINFRA Interaction Platform, the VRE (Binder, pygeoapi, Galaxy), source code, the Data Discovery and Access Service, and Zenodo.">
+    </a>
+</div>
+
+---

@@ -1,0 +1,1357 @@
+/* =========================================
+   AquaINFRA Premium Theme Extensions
+   ========================================= */
+
+:root {
+    --aqua-blue: #3564AC;
+    --aqua-blue-light: #e1e9f6;
+    --aqua-hover: #2a5291;
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --border-light: 1px solid #e1e9f6;
+}
+
+/* Learning Path (Homepage) */
+.learning-path {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.path-step {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.path-step::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 50px;
+    bottom: -50px;
+    width: 2px;
+    background: var(--aqua-blue-light);
+    z-index: 0;
+}
+
+.path-step:last-child::before {
+    display: none;
+}
+
+.step-marker {
+    width: 38px;
+    height: 38px;
+    background: var(--aqua-blue);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    z-index: 1;
+    flex-shrink: 0;
+    box-shadow: 0 3px 8px rgba(53, 100, 172, 0.12);
+}
+
+.step-content {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-soft);
+    flex: 1;
+    border: 1px solid #f0f0f0;
+}
+
+.step-title {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.05rem;
+    color: #333;
+    border: none;
+}
+
+.step-desc {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    color: #666;
+}
+
+.step-link {
+    display: inline-block;
+    color: var(--aqua-blue);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.82rem;
+}
+
+.step-links {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.step-divider {
+    color: #ddd;
+    font-weight: 300;
+}
+
+/* Sequential Navigation Buttons */
+.sequence-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+
+.btn-seq {
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+    border: 1px solid #e1e9f6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-seq--next {
+    background: var(--aqua-blue);
+    color: white !important;
+}
+
+.btn-seq--prev {
+    background: #f8fafd;
+    color: var(--aqua-blue) !important;
+}
+
+.btn-seq:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(53, 100, 172, 0.15);
+}
+
+/* Use Case Cards (Library) */
+.use-case-library {
+    margin-top: 2rem;
+}
+
+/* Region section headings */
+.use-case-library .region-group {
+    margin-bottom: 3.5rem;
+}
+
+.use-case-library .region-tag-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 0.85rem;
+    border-bottom: 2px solid var(--aqua-blue-light);
+}
+
+.use-case-library .region-tag-wrapper::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 28px;
+    background: var(--aqua-blue);
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.use-case-library .badge-tag {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--aqua-blue);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+.use-case-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.use-case-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: var(--border-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.use-case-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-body {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.use-case-card__title {
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+    color: var(--aqua-blue);
+    border: none;
+}
+
+.use-case-card__desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.resource-links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+.use-case-compact-grid .resource-links {
+    margin-top: 0.3rem;
+}
+
+.use-case-compact-grid .resource-btn {
+    padding: 0.18rem 0.48rem;
+    font-size: 0.68rem;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.resource-btn {
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.resource-btn--zenodo {
+    background: #0072b2;
+    color: white;
+}
+
+.resource-btn--github {
+    background: #24292e;
+    color: white;
+}
+
+.resource-btn--youtube {
+    background: #ff0000;
+    color: white;
+}
+
+.use-case-card__footer {
+    background: #f8fafd;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--aqua-blue);
+    font-weight: 700;
+    border-top: var(--border-light);
+    transition: background 0.2s;
+}
+
+.use-case-card__footer:hover {
+    background: #e1e9f6;
+}
+
+/* Contact Page Enhancements */
+.contact-card {
+    border-top: 4px solid var(--aqua-blue);
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-title {
+    color: var(--aqua-blue);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border: none;
+}
+
+/* =========================================
+   Info Block Cards (Partners & Target)
+   ========================================= */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    align-items: stretch;
+}
+
+.info-block {
+    background: #fff;
+    border: var(--border-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-block:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(53, 100, 172, 0.12); /* Subtle AquaINFRA blue glow */
+}
+
+.info-block h3 {
+    font-size: 1.05rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid #f0f4fa;
+    line-height: 1.3;
+}
+
+.info-block h3 span {
+    color: var(--aqua-blue) !important;
+    font-weight: 700;
+}
+
+.info-block p {
+    font-size: 0.92rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 0;
+    flex-grow: 1; /* Pushes content down evenly if cards are different heights */
+}
+
+/* Contact Page Enhancements Continued */
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+.contact-info-block {
+    margin-bottom: 2rem;
+}
+
+.contact-info-block h4 {
+    margin-bottom: 0.5rem;
+    color: var(--aqua-blue);
+}
+
+.contact-lead {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Hero Section (Homepage) - Matching aquainfra.eu/training */
+.hero-section {
+    background: linear-gradient(135deg, rgb(0, 51, 102), rgb(0, 102, 204));
+    padding: 64px 32px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    margin-bottom: 48px;
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 15px;
+    line-height: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 32px 16px;
+        margin-bottom: 32px;
+    }
+
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 12.5px;
+        line-height: 1.5;
+    }
+
+    .step-title {
+        font-size: 0.95rem;
+    }
+
+    .step-desc {
+        font-size: 0.82rem;
+    }
+}
+
+/* =========================================
+   Copy-to-clipboard buttons on code blocks
+   ========================================= */
+.code-block-wrapper {
+    position: relative;
+    margin: 1.5rem 0;
+}
+.code-block-wrapper pre {
+    margin: 0;
+}
+.copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: #fff;
+    border: 1px solid #d0d7de;
+    color: #57606a;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.78rem;
+    font-family: var(--font-system, sans-serif);
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s ease, background 0.15s ease, color 0.15s ease;
+    z-index: 2;
+}
+.code-block-wrapper:hover .copy-btn,
+.copy-btn:focus {
+    opacity: 1;
+}
+.copy-btn:hover {
+    background: #f6f8fa;
+    color: #24292f;
+}
+.copy-btn--success {
+    background: #dafbe1;
+    border-color: #1a7f37;
+    color: #1a7f37;
+    opacity: 1;
+}
+
+/* =========================================
+   Glossary tooltips
+   ========================================= */
+.glossary-term {
+    border-bottom: 1px dotted var(--aqua-blue);
+    text-decoration: none;
+    cursor: help;
+}
+.glossary-tooltip {
+    position: absolute;
+    max-width: 300px;
+    background: #1f2937;
+    color: #f1f5f9;
+    padding: 0.7rem 0.95rem 0.75rem;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    border-radius: 7px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    z-index: 1000;
+}
+.glossary-tooltip--visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.glossary-tooltip__term {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7dd3fc;
+    margin-bottom: 0.3rem;
+}
+.glossary-tooltip__def {
+    margin: 0 0 0.5rem 0;
+    color: #e2e8f0;
+}
+.glossary-tooltip__link {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #38bdf8;
+    text-decoration: none;
+}
+.glossary-tooltip__link:hover {
+    text-decoration: underline;
+}
+
+/* GitHub-style Alerts Styling */
+.alert-box {
+    margin: 2rem 0;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid transparent;
+    background-color: #f8f9fa;
+    color: #24292f;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.alert-box p {
+    margin-bottom: 0 !important;
+}
+
+.alert-box__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Specific Alert Types (text label only, no injected icon) */
+.alert-box--note {
+    background-color: #f0f7ff;
+    border-left-color: #0969da;
+}
+
+.alert-box--note .alert-box__label {
+    color: #0969da;
+}
+
+.alert-box--tip {
+    background-color: #f0fdf4;
+    border-left-color: #1a7f37;
+}
+
+.alert-box--tip .alert-box__label {
+    color: #1a7f37;
+}
+
+.alert-box--important {
+    background-color: #f6f0ff;
+    border-left-color: #8250df;
+}
+
+.alert-box--important .alert-box__label {
+    color: #8250df;
+}
+
+.alert-box--warning {
+    background-color: #fff9eb;
+    border-left-color: #9a6700;
+}
+
+.alert-box--warning .alert-box__label {
+    color: #9a6700;
+}
+
+.alert-box--caution {
+    background-color: #fff8f8;
+    border-left-color: #cf222e;
+}
+
+.alert-box--caution .alert-box__label {
+    color: #cf222e;
+}
+
+/* =========================================
+   Layout components (was inline styles)
+   ========================================= */
+
+/* "About this chapter" intro box - light AquaINFRA blue, no icon */
+.chapter-intro {
+    background: linear-gradient(135deg, #eaf1fc 0%, #f5f8fd 100%);
+    border: 1px solid var(--aqua-blue-light);
+    border-left: 4px solid var(--aqua-blue);
+    border-radius: 0 10px 10px 0;
+    padding: 1.15rem 1.4rem;
+    margin: 0 0 1.85rem 0;
+    color: var(--gray-900);
+    box-shadow: 0 2px 10px rgba(53, 100, 172, 0.07);
+}
+
+.chapter-intro::before {
+    content: "About this chapter";
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--aqua-blue);
+    margin-bottom: 0.45rem;
+}
+
+.chapter-intro p {
+    margin: 0;
+    font-size: 1.02rem;
+    line-height: 1.65;
+}
+
+/* In-content hero banner (training index / contact pages) */
+.page-hero {
+    background-color: var(--aqua-blue);
+    color: #fff;
+    padding: 4rem 2rem;
+    /* Bleeds only as far as the wrapper padding, never past the screen edge */
+    margin: -2rem -0.75rem 3rem -0.75rem;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.page-hero h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 3rem;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .page-hero h1 {
+        font-size: 1.9rem;
+    }
+}
+
+/* Chapter meta line (read time / video time / position) */
+.chapter-meta {
+    color: var(--text-muted);
+    margin-top: -0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Breadcrumb trail */
+.breadcrumb {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    margin-bottom: 1.25rem;
+}
+
+.breadcrumb a {
+    color: var(--aqua-blue);
+}
+
+.breadcrumb__sep {
+    margin: 0 0.4rem;
+    color: #bbb;
+}
+
+.breadcrumb__current {
+    color: var(--gray-600);
+}
+
+/* Decorative wave at the foot of content pages */
+.wave-decoration {
+    /* Bleeds into the page padding without ever passing the viewport edge */
+    margin: 0 min(-2rem, 0px) -2rem;
+    max-width: 100vw;
+    height: 100px;
+    background: linear-gradient(to top, rgba(53, 100, 172, 0.05), transparent);
+}
+
+/* Diagram / flowchart figure - centred, responsive, click to enlarge */
+.diagram {
+    margin: 1.25rem 0 2rem 0;
+    text-align: center;
+}
+
+.diagram img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--aqua-blue-light);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(53, 100, 172, 0.07);
+}
+
+.diagram figcaption {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.6rem;
+}
+
+/* =========================================
+   Research Questions List Styling
+   ========================================= */
+
+.question-list {
+    background: #f8fafd;
+    border: 1px solid var(--aqua-blue-light);
+    border-left: 4px solid var(--aqua-blue);
+    border-radius: 6px;
+    padding: 1.5rem 2rem 1.5rem 1rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.question-list ol {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: var(--gray-800);
+}
+
+.question-list ol li {
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.question-list ol li:last-child {
+    margin-bottom: 0;
+}
+
+.question-list ol li strong {
+    color: var(--aqua-blue-dark);
+}
+
+@media (max-width: 640px) {
+    .question-list {
+        padding: 1.25rem 1rem 1.25rem 0.5rem;
+    }
+    .question-list ol {
+        padding-left: 1.25rem;
+    }
+    .question-list ol li {
+        font-size: 0.95rem;
+    }
+}
+
+/* =========================================
+   Interactive Knowledge Check / Self-Assessment
+   ========================================= */
+
+details.knowledge-check {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid var(--aqua-blue, #3564AC);
+    border-radius: 6px;
+    padding: 0.85rem 1.25rem;
+    margin: 1.5rem 0;
+    transition: background-color 0.2s ease;
+}
+
+details.knowledge-check:hover {
+    background: #f1f5f9;
+}
+
+details.knowledge-check summary {
+    font-weight: 600;
+    font-size: 0.98rem;
+    color: var(--aqua-blue-dark, #1e3a8a);
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+details.knowledge-check summary::-webkit-details-marker {
+    display: none;
+}
+
+details.knowledge-check summary::after {
+    content: "Show Answer ▼";
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--aqua-blue, #3564AC);
+    background: #e0f2fe;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+details.knowledge-check[open] summary::after {
+    content: "Hide Answer ▲";
+    background: #bae6fd;
+}
+
+details.knowledge-check .answer-content {
+    margin-top: 0.85rem;
+    padding-top: 0.85rem;
+    border-top: 1px dashed #cbd5e1;
+    color: #334155;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* =========================================
+   1-Click Interactive Launch Action Buttons
+   ========================================= */
+
+.action-bar {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin: 1.25rem 0;
+}
+
+.btn-launch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.1rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.btn-launch:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.btn-launch--galaxy {
+    background: #005B94;
+    color: #ffffff !important;
+}
+
+.btn-launch--binder {
+    background: #575757;
+    color: #ffffff !important;
+}
+
+.btn-launch--d2kp {
+    background: #059669;
+    color: #ffffff !important;
+}
+
+/* =========================================
+   Course Progress & Mark Complete Button
+   ========================================= */
+
+.btn-complete {
+    background: #ffffff;
+    border: 1px solid var(--aqua-blue, #3564AC);
+    color: var(--aqua-blue, #3564AC);
+    padding: 0.5rem 1rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-complete:hover {
+    background: var(--aqua-blue-light, #e1e9f6);
+}
+
+.btn-complete--done {
+    background: #10b981;
+    border-color: #10b981;
+    color: #ffffff;
+}
+
+.btn-complete--done:hover {
+    background: #059669;
+    border-color: #059669;
+}
+
+/* =========================================
+   Course Overview Progress Banner
+   ========================================= */
+
+.course-overview-progress {
+    background: #f8fafc;
+    border: 1px solid var(--border-color, #e1e9f6);
+    border-left: 4px solid var(--aqua-blue, #3564AC);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0 1.25rem 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    font-size: 0.92rem;
+    color: var(--gray-800, #1e293b);
+}
+
+.progress-title {
+    color: var(--aqua-blue-dark, #1e3a8a);
+}
+
+.progress-percent {
+    font-weight: 600;
+    color: #10b981;
+    font-size: 0.88rem;
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3564AC 0%, #10b981 100%);
+    border-radius: 5px;
+    transition: width 0.4s ease;
+}
+
+/* =========================================
+   Interactive Use Cases Map & Split Explorer
+   ========================================= */
+
+.use-case-explorer-split {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+    .use-case-explorer-split {
+        display: grid;
+        grid-template-columns: 52% 46%;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .use-case-map-column {
+        position: sticky;
+        top: 1.5rem;
+    }
+
+    .use-case-map-container {
+        height: 520px !important;
+    }
+
+    .use-case-compact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .use-case-map-container {
+        height: 280px !important;
+    }
+
+    .use-case-compact-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.65rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .use-case-map-container {
+        height: 220px !important;
+    }
+
+    .use-case-compact-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+.use-case-map-container {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #cbd5e1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Region Badges with Distinct Region Highlights */
+.badge-region {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.35rem;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+/* North Sea Badge */
+.badge-region--north-sea {
+    background: #ecfdf5;
+    color: #047857;
+    border-color: #a7f3d0;
+}
+
+/* Baltic Sea Badge */
+.badge-region--baltic-sea {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border-color: #bfdbfe;
+}
+
+/* Mediterranean Badge */
+.badge-region--mediterranean,
+.badge-region--mediterranean-sea {
+    background: #fff7ed;
+    color: #c2410c;
+    border-color: #fed7aa;
+}
+
+/* Pan-European Badge */
+.badge-region--pan-european {
+    background: #f5f3ff;
+    color: #4338ca;
+    border-color: #ddd6fe;
+}
+
+/* Compact Card Adjustments */
+.use-case-compact-grid .use-case-card {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.use-case-compact-grid .card-body {
+    padding: 0.6rem 0.85rem 0.5rem 0.85rem;
+}
+
+.use-case-compact-grid .use-case-card__title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.3rem 0;
+    color: #0f172a;
+}
+
+.use-case-compact-grid .use-case-card__desc {
+    font-size: 0.78rem;
+    line-height: 1.35;
+    color: #475569;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.use-case-compact-grid .use-case-card__footer {
+    display: block;
+    padding: 0.4rem 0.85rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: #f8fafc;
+    border-top: 1px solid #f1f5f9;
+    color: #3564AC !important;
+    text-decoration: none !important;
+    border-radius: 0 0 8px 8px;
+    transition: background 0.2s ease;
+}
+
+.use-case-compact-grid .use-case-card__footer:hover {
+    background: #e0f2fe;
+    color: #0369a1 !important;
+}
+
+/* Custom Map Marker Pin Styling */
+.custom-map-pin-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-map-pin {
+    width: 16px;
+    height: 16px;
+    background: #3564AC;
+    border: 2.5px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.custom-map-pin:hover,
+.custom-map-pin--active {
+    background: #10b981;
+    transform: scale(1.35);
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.7);
+    border-color: #ffffff;
+}
+
+/* Map Tooltip Popup */
+.leaflet-popup {
+    pointer-events: auto !important;
+}
+
+.map-popup-card {
+    padding: 0.2rem 0.1rem;
+    font-family: inherit;
+}
+
+.map-popup-badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 0.12rem 0.45rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+}
+
+.map-popup-badge--north-sea { background: #ecfdf5; color: #047857; }
+.map-popup-badge--baltic-sea { background: #eff6ff; color: #1d4ed8; }
+.map-popup-badge--mediterranean,
+.map-popup-badge--mediterranean-sea { background: #fff7ed; color: #c2410c; }
+.map-popup-badge--pan-european { background: #f5f3ff; color: #4338ca; }
+
+.map-popup-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 0.3rem 0;
+    line-height: 1.25;
+}
+
+.map-popup-desc {
+    font-size: 0.78rem;
+    color: #475569;
+    margin: 0 0 0.6rem 0;
+    line-height: 1.35;
+}
+
+.map-popup-link {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff !important;
+    background: #3564AC;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    text-decoration: none !important;
+    transition: background 0.2s ease;
+}
+
+.map-popup-link:hover {
+    background: #10b981 !important;
+    color: #ffffff !important;
+}
+
+/* Card Highlight State when Map Pin / Card is Hovered */
+.use-case-card--highlighted {
+    border-color: #3564AC !important;
+    box-shadow: 0 4px 14px rgba(53, 100, 172, 0.25) !important;
+    transform: translateY(-2px);
+}
+
+.use-case-card--highlighted .badge-region {
+    transform: scale(1.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   Inline SVG Diagram Figures (dark canvas)
+   ========================================= */
+
+.diagram--svg {
+    margin: 2.25rem 0 2.5rem 0;
+}
+
+.diagram--svg .figure-scroll {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 14px;
+}
+
+.diagram--svg svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 14px;
+    background: var(--fig-canvas);
+    box-shadow: 0 10px 24px rgba(7, 6, 8, 0.18);
+}
+
+.diagram--svg figcaption {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.7rem;
+    text-align: center;
+}
+
+/* Shared type ramp inside diagrams. Sizes are viewBox units. */
+.diagram--svg text {
+    font-family: var(--font-system, sans-serif);
+}
+
+.fig-title {
+    font-size: 19px;
+    font-weight: 700;
+    fill: var(--fig-ink);
+}
+
+.fig-label {
+    font-size: 15px;
+    font-weight: 600;
+    fill: var(--fig-ink);
+}
+
+.fig-sub {
+    font-size: 13px;
+    fill: var(--fig-ink-muted);
+}
+
+.fig-note {
+    font-size: 13px;
+    font-style: italic;
+    fill: var(--fig-ink-dim);
+}
+
+/* Accent variants for labels that belong to a coloured element */
+.fig-accent-sky { fill: #7dd3fc; }
+.fig-accent-emerald { fill: #6ee7b7; }
+.fig-accent-amber { fill: #fcd34d; }
+.fig-accent-rose { fill: #fda4af; }
+.fig-accent-lime { fill: #bef264; }
+.fig-accent-violet { fill: #d8b4fe; }
+.fig-accent-ink { fill: var(--fig-ink); }
+
+/* On phones, scroll the diagram instead of shrinking its labels to nothing */
+/* Phones: diagrams fit the screen and their labels grow to stay readable.
+   Diagrams built from fixed-size boxes cannot grow their type, so they keep
+   their natural width and scroll inside the figure instead. */
+@media (max-width: 640px) {
+    /* Label sizes are viewBox units, so they scale with the diagram's own
+       width: each figure declares its width family to land near 12-15px on a
+       phone screen. */
+    .diagram--svg .fig-title {
+        font-size: 33px;
+    }
+
+    .diagram--svg .fig-label {
+        font-size: 26px;
+    }
+
+    .diagram--svg--w620 .fig-title {
+        font-size: 26px;
+    }
+
+    .diagram--svg--w620 .fig-label {
+        font-size: 20px;
+    }
+
+    .diagram--svg--w860 .fig-title {
+        font-size: 35px;
+    }
+
+    .diagram--svg--w860 .fig-label {
+        font-size: 28px;
+    }
+
+    /* Secondary labels are dropped rather than crowded; they repeat text that
+       is already in the chapter body. */
+    .diagram--svg .fig-sub,
+    .diagram--svg .fig-note {
+        display: none;
+    }
+}
+
+/* =========================================
+   Step Flow (sequence of stages, reflows on small screens)
+   ========================================= */
+
+.flow-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.flow-step {
+    background: #fff;
+    border: 1px solid var(--gray-200);
+    border-top: 3px solid var(--aqua-blue);
+    border-radius: 8px;
+    padding: 0.9rem 1rem 1rem 1rem;
+    box-shadow: var(--shadow-soft, 0 4px 15px rgba(0, 0, 0, 0.05));
+}
+
+.flow-step__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--aqua-blue-dark);
+    margin-bottom: 0.35rem;
+}
+
+.flow-step__body {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--gray-800);
+}
+
+.flow-step__note {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Accent variants, matching the colours used in the chapter diagrams */
+.flow-step--emerald { border-top-color: #10b981; }
+.flow-step--amber { border-top-color: #f59e0b; }
+.flow-step--rose { border-top-color: #f43f5e; }
+.flow-step--sky { border-top-color: #0ea5e9; }
+
+.flow-step--critical {
+    background: #fff5f6;
+    border-color: #fecdd3;
+}
+
+/* Mermaid: keep both the rendered diagram and the raw fallback inside the column */
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}
+
+pre:has(code.language-mermaid) {
+    max-width: 100%;
+    overflow-x: auto;
+}

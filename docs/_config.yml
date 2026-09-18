@@ -1,0 +1,37 @@
+# ============================================
+# AquaINFRA Training Handbook Configuration
+# ============================================
+# This file controls the Jekyll site settings.
+# Changes require restarting the Jekyll server.
+
+# Site Metadata
+title: AquaINFRA Training Handbook
+description: Companion handbook to the AquaINFRA YouTube trainings. Find data, run reproducible workflows, and review what you learned.
+
+# Note: the feedback widget ("Edit on GitHub" / issue links) uses
+# site.github.repository_url, which GitHub Pages populates automatically
+# via jekyll-github-metadata. No config changes needed when forking.
+
+# Branding
+# This handbook is embedded inside aquainfra.eu/training, which supplies the
+# global header, footer, and logo. The handbook itself renders no header/footer.
+
+# Build Configuration
+# destination: ../build
+# cache_dir: ../build/.jekyll-cache
+
+# GitHub Pages Configuration
+# This site uses dynamic "Relative Root" logic: every asset and link is
+# resolved from the page's own depth, so NO CHANGES ARE REQUIRED HERE for any
+# repository name, fork, or subfolder setup.
+baseurl: ""
+url: ""
+
+# Features
+mermaid:
+  enabled: true  # Enables Mermaid.js for rendering diagrams in markdown
+search_enabled: false  # Search functionality not yet implemented
+
+# Footer & Citations
+gh_url: ""
+# No site footer: the parent site (aquainfra.eu/training) provides it.

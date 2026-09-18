@@ -1,0 +1,46 @@
+# AquaINFRA Training Handbook
+
+![AquaINFRA](https://img.shields.io/badge/Project-AquaINFRA-blue) ![Status](https://img.shields.io/badge/Status-Active-success) ![Jekyll](https://img.shields.io/badge/Built%20with-Jekyll-orange)
+
+This repository provides the high-performance, mobile-responsive source code for the **AquaINFRA Training Handbook**. It is designed as a guided portal for researchers navigating the AquaINFRA ecosystem.
+
+## Live Handbook
+Access the interactive training modules here:  
+**[smatmir.github.io/AquaINFRA_Handbook](https://smatmir.github.io/AquaINFRA_Handbook/)**
+
+## Project Scope
+The handbook covers the full research lifecycle within the project:
+1.  **Foundations**: EOSC integration and the AquaINFRA mission.
+2.  **Environments**: Exploration of AIP (Interaction Platform) and VRE (Virtual Research Environment).
+3.  **Packages**: D2KP (Data-to-Knowledge) implementation.
+4.  **Training Library**: Practical, video-driven use cases and technical training modules.
+
+## Key Features
+- **Zero-Config Portability**: Fork and deploy to GitHub Pages instantly without editing code.
+- **Guided Navigation**: A sequential UI optimized for learning retention and progression.
+- **Premium Design System**: Lightweight Vanilla CSS providing a premium look on all devices.
+
+## The Complete Learning Path
+1.  **EOSC**: Understanding how AquaINFRA integrates with the European Open Science Cloud.
+2.  **AquaINFRA**: Core mission, goals, and official project resources.
+3.  **AIP**: The AquaINFRA Interaction Platform overview.
+4.  **AquaINFRA VRE**: Technical guide to the Virtual Research Environment.
+5.  **D2KP**: Data to Knowledge Package: From raw data to actionable knowledge.
+6.  **Use Case Library**: Technical training modules with video tutorials and reproducible code.
+7.  **Contact**: Project support and contact information.
+
+## Documentation
+- **[Architecture](ARCHITECTURE.md)**: Logic and system design overview.
+- **[Contributing](CONTRIBUTING.md)**: Workflow and pre-publish checklist for adding new training content.
+- **[Style Guide](STYLEGUIDE.md)**: Tone, capitalisation, and writing conventions.
+- **[Template Guideline](docs/trainings/_TEMPLATE/Template_Guideline.md)**: Page anatomy and CSS conventions for new chapters.
+
+## Core Team & Leadership
+The AquaINFRA Training Handbook are developed and maintained at **[Hochschule Bochum](https://www.hochschule-bochum.de/fbg/team-und-labore/kessler/)** within the AquaINFRA project team.
+
+- **[Prof. Dr. Carsten Keßler](https://github.com/crstn)** — Team Lead
+- **[Sadra Matmir](https://github.com/smatmir)** — Concept Designer & Developer
+- **[Mehrad Moradipour](https://github.com/Mehrad1994)** — Developer
+
+---
+*For official project news and research goals, visit [aquainfra.eu](https://aquainfra.eu).*

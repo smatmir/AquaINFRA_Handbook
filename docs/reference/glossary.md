@@ -25,7 +25,7 @@ Definitions of core terminology used across the AquaINFRA handbook, platform, an
         <tbody>
             <tr id="aip">
                 <td><strong>AIP</strong><br><small>AquaINFRA Interaction Platform</small></td>
-                <td>The central web portal at <a href="https://aquainfra.dev.52north.org/" target="_blank" rel="noopener">aquainfra.dev.52north.org</a> for discovering datasets, tools, workflows, and Data-to-Knowledge Packages. See <a href="../03_aip">AIP Chapter</a>.</td>
+                <td>The central web portal at <a href="https://aquainfra.dev.52north.org/" target="_blank" rel="noopener">aquainfra.dev.52north.org</a> for discovering datasets, tools, workflows, and Data-to-Knowledge Packages. See <a href="../03_aip">DDAS and AIP Chapter</a>.</td>
             </tr>
             <tr id="aqua-galaxy">
                 <td><strong>Aqua Galaxy</strong></td>
@@ -37,7 +37,7 @@ Definitions of core terminology used across the AquaINFRA handbook, platform, an
             </tr>
             <tr id="ddas">
                 <td><strong>DDAS</strong><br><small>Data Discovery & Access Service</small></td>
-                <td>The backend service powering AIP search and exposing datasets through standard OGC Web APIs.</td>
+                <td>The backend service powering AIP search and exposing datasets through standard OGC Web APIs. See <a href="../03_aip">DDAS and AIP Chapter</a>.</td>
             </tr>
             <tr id="edugain">
                 <td><strong>eduGAIN</strong></td>

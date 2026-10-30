@@ -48,10 +48,10 @@ title: Home
 <div class="path-step">
     <div class="step-marker">3</div>
     <div class="step-content">
-        <h2 class="step-title">AquaINFRA Interaction Platform (AIP)</h2>
-        <p class="step-desc">Discover the AquaINFRA Interaction Platform.</p>
+        <h2 class="step-title">Data Discovery & Interaction (DDAS and AIP)</h2>
+        <p class="step-desc">Discover how the Data Discovery & Access Service (DDAS) and AquaINFRA Interaction Platform (AIP) connect and expose datasets.</p>
         <div class="step-links">
-            <a href="{{ relative_root }}03_aip" class="step-link"> AIP in Handbook →</a>
+            <a href="{{ relative_root }}03_aip" class="step-link"> DDAS and AIP in Handbook →</a>
             <a href="https://aquainfra.dev.52north.org/" target="_blank" class="step-link">AIP Homepage →</a>
         </div>
     </div>

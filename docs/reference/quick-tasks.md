@@ -25,7 +25,7 @@ A fast index linking common research and analytical goals directly to their corr
         <tbody>
             <tr>
                 <td>Search AIP datasets by keyword and topic</td>
-                <td><a href="../03_aip">AIP Chapter: Search Workflow</a></td>
+                <td><a href="../03_aip">DDAS and AIP Chapter: Search Workflow</a></td>
             </tr>
             <tr>
                 <td>Filter marine & freshwater datasets by spatial polygon / bounding box</td>

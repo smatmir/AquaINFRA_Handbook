@@ -83,9 +83,9 @@ Learn how to search for data on the AIP, subset data via DDAS, and import datase
         </thead>
         <tbody>
             <tr>
-                <td><strong>AIP</strong></td>
-                <td>Search and discover multidisciplinary aquatic datasets.</td>
-                <td><a href="{{ relative_root }}03_aip">AIP Chapter &rarr;</a></td>
+                <td><strong>DDAS &amp; AIP</strong></td>
+                <td>Harvest, search, and discover multidisciplinary aquatic datasets.</td>
+                <td><a href="{{ relative_root }}03_aip">DDAS and AIP Chapter &rarr;</a></td>
             </tr>
             <tr>
                 <td><strong>VRE / Aqua Galaxy</strong></td>

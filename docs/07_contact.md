@@ -22,19 +22,19 @@ Get in touch with the AquaINFRA training development team for technical inquirie
             <tr>
                 <th>Contact Person</th>
                 <th>Role / Institution</th>
-                <th>Email Address</th>
+                <th>Contact / Profile</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td><strong>Sadra Matmir</strong></td>
                 <td>Training Development Lead (Hochschule Bochum)</td>
-                <td><a href="mailto:Sadra.Matmir@hs-bochum.de">Sadra.Matmir@hs-bochum.de</a></td>
+                <td><a href="https://www.hochschule-bochum.de/fbg/team-und-labore/matmir/" target="_blank" rel="noopener">HSBO Profile Page &rarr;</a></td>
             </tr>
             <tr>
                 <td><strong>Prof. Carsten Keßler</strong></td>
                 <td>Project Principal Investigator (Hochschule Bochum)</td>
-                <td><a href="mailto:Carsten.Kessler@hs-bochum.de">Carsten.Kessler@hs-bochum.de</a></td>
+                <td><a href="https://www.hochschule-bochum.de/fbg/team-und-labore/kessler/" target="_blank" rel="noopener">HSBO Profile Page &rarr;</a></td>
             </tr>
         </tbody>
     </table>

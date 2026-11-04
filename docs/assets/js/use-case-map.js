@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
         closePopupOnClick: false
     });
 
-    // Sleek CartoDB Positron light tile layer
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        subdomains: 'abcd',
-        maxZoom: 18
+    // Clean OpenStreetMap tile layer (no API key required)
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
     // 2. Define Use Case Locations

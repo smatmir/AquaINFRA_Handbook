@@ -992,6 +992,10 @@ details.knowledge-check .answer-content {
     z-index: 1;
 }
 
+.use-case-map-container .leaflet-tile-pane {
+    filter: saturate(0.7) brightness(1.03) contrast(0.95);
+}
+
 /* Region Badges with Distinct Region Highlights */
 .badge-region {
     display: inline-block;

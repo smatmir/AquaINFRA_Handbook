@@ -40,7 +40,7 @@ The AquaINFRA Training Handbook are developed and maintained at **[Hochschule Bo
 
 - **[Prof. Dr. Carsten Keßler](https://github.com/crstn)** — Team Lead
 - **[Sadra Matmir](https://github.com/smatmir)** — Concept Designer & Developer
-- **[Mehrad Moradipour](https://github.com/Mehrad1994)** — Developer
+- **[Mehrad Moradipour](https://github.com/MehradMoradipour)** — Developer
 
 ---
 *For official project news and research goals, visit [aquainfra.eu](https://aquainfra.eu).*

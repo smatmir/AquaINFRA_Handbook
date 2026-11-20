@@ -13,7 +13,7 @@ use_case: true
 <p class="chapter-meta">Video series&nbsp;· AquaINFRA YouTube channel&nbsp;· 4&nbsp;parts, ~20&nbsp;min&nbsp;· <a href="https://www.youtube.com/playlist?list=PLL1H84_SJEng">Watch&nbsp;the&nbsp;playlist&nbsp;on&nbsp;YouTube</a></p>
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/videoseries?list=PLL1H84_SJEng" title="AquaINFRA - Vantaanjoki: From Source to Sea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Mn7BpXt3uhY?list=PLL1H84_SJEng" title="AquaINFRA - Vantaanjoki: From Source to Sea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Chapters

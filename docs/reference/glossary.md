@@ -100,6 +100,10 @@ Definitions of core terminology used across the AquaINFRA handbook, platform, an
                 <td><strong>OGC Web APIs</strong></td>
                 <td>Open Geospatial Consortium standards (including OGC API Features and <code>pygeoapi</code>) for spatial data querying and web process execution.</td>
             </tr>
+            <tr id="sentinel-2">
+                <td><strong>Sentinel-2 / MSI</strong></td>
+                <td>A European Space Agency Earth Observation mission whose MultiSpectral Instrument (MSI) images land and coastal waters at 10 to 60 m resolution, used for mapping turbidity plumes near the coast.</td>
+            </tr>
             <tr id="sentinel-3">
                 <td><strong>Sentinel-3 / OLCI</strong></td>
                 <td>A European Space Agency Earth Observation satellite equipped with the Ocean and Land Colour Instrument (OLCI) for ocean color and sea surface monitoring.</td>
@@ -208,6 +212,14 @@ Definitions of core terminology used across the AquaINFRA handbook, platform, an
             <tr id="submarine-groundwater-discharge">
                 <td><strong>Submarine Groundwater Discharge</strong><br><small>SGD</small></td>
                 <td>The direct flow of subterranean groundwater from coastal land aquifers into marine or estuarine waters.</td>
+            </tr>
+            <tr id="total-organic-carbon">
+                <td><strong>Total Organic Carbon</strong><br><small>TOC</small></td>
+                <td>The amount of carbon bound in organic compounds in water. Combined with river discharge, it gives the organic carbon load a river carries to the sea.</td>
+            </tr>
+            <tr id="turbidity">
+                <td><strong>Turbidity</strong></td>
+                <td>The cloudiness of water caused by suspended particles such as clay, sediment and phytoplankton, measured in FNU and observable both in situ and from satellites.</td>
             </tr>
         </tbody>
     </table>

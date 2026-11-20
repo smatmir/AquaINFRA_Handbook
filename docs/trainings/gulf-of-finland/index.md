@@ -7,10 +7,14 @@ use_case: true
 ---
 
 <div class="chapter-intro">
-    <p>This is a draft version of the use case based on the AquaINFRA D5.2 Deliverable. Training materials and workflows will be added as they are developed.</p>
+    <p>The Vantaanjoki flows through the Helsinki metropolitan region into the Gulf of Finland. This use case follows its water from source to sea: land use and organic carbon loads in the catchment, then the river's turbidity plume in the coastal sea. Watch the video series below, then use the chapters as a quick reference.</p>
 </div>
 
-<p class="chapter-meta">Coming Soon</p>
+<p class="chapter-meta">Video series · AquaINFRA YouTube channel · 4 parts, ~20 min</p>
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PLL1H84_SJEng" title="AquaINFRA - Vantaanjoki: From Source to Sea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Chapters
 
@@ -23,9 +27,10 @@ use_case: true
             </tr>
         </thead>
         <tbody>
-            <tr><td><a href="./01_introduction"><strong>Introduction</strong></a></td><td>General characteristics of the study area.</td></tr>
-            <tr><td><a href="./02_research_questions"><strong>Research questions</strong></a></td><td>The main questions addressed by this use case.</td></tr>
-            <tr><td><a href="./03_workflow"><strong>Workflow</strong></a></td><td>Details on the data and analytical workflows.</td></tr>
+            <tr><td><a href="./01_introduction"><strong>Why the Vantaanjoki</strong></a></td><td>The catchment, why Syke chose it, and the three research questions.</td></tr>
+            <tr><td><a href="./02_river_loads"><strong>From catchment to river loads</strong></a></td><td>The two linked workflows, land cover change, and organic carbon loads.</td></tr>
+            <tr><td><a href="./03_ferrybox_turbidity"><strong>FerryBox and turbidity in the coastal sea</strong></a></td><td>Following the river plume with FerryBox, satellite and discharge data.</td></tr>
+            <tr><td><a href="./04_reuse_fair"><strong>Reuse and the FAIR approach</strong></a></td><td>The tools, workflow and packages you can reuse.</td></tr>
         </tbody>
     </table>
 </div>

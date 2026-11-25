@@ -10,8 +10,6 @@ use_case: true
     <p>The Vantaanjoki flows through the Helsinki metropolitan region into the Gulf of Finland. This use case follows its water from source to sea: land use and organic carbon loads in the catchment, then the river's turbidity plume in the coastal sea. Watch the full video below, then use the chapters as a quick reference.</p>
 </div>
 
-<p class="chapter-meta">Full video&nbsp;· AquaINFRA YouTube channel&nbsp;· ~20&nbsp;min&nbsp;· <a href="https://www.youtube.com/playlist?list=PLL1H84_SJEng">Watch&nbsp;the&nbsp;playlist&nbsp;on&nbsp;YouTube</a></p>
-
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/cTYIwGt2Ac4" title="Vantaanjoki: from source to sea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>

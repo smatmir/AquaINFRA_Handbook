@@ -24,7 +24,7 @@ Together, the **[Data Discovery & Access Service (DDAS)]({{ relative_root }}refe
 Watch how DDAS connects distributed marine and freshwater repositories, standardises metadata harvesting, and exposes datasets via OGC Web APIs.
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/VtH1NTCoPg8?list=PLNyM9_MJ3Css" title="YouTube video player - Part 1: Data Discovery and Access Service (DDAS)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VtH1NTCoPg8" title="YouTube video player - Part 1: Data Discovery and Access Service (DDAS)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ---
@@ -34,7 +34,7 @@ Watch how DDAS connects distributed marine and freshwater repositories, standard
 Watch how to search datasets on the AIP, apply spatial and thematic filters, and trigger imports into Aqua Galaxy for analysis.
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/CCoKYdVR73Q?list=PLNyM9_MJ3Css" title="YouTube video player - Part 2: AquaINFRA Interaction Platform (AIP)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/CCoKYdVR73Q" title="YouTube video player - Part 2: AquaINFRA Interaction Platform (AIP)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ---
